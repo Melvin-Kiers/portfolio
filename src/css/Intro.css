@@ -1,0 +1,7 @@
+section.intro {
+  overflow-x: hidden;
+  position: relative;
+  z-index: 2;
+  background-color: #FCFEFF;
+  padding: 100px 0;
+}

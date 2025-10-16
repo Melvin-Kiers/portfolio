@@ -1,0 +1,51 @@
+.header {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* header vult hele viewport */
+  overflow: hidden;
+  background-color: #15182e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+#tsparticles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1; /* onder de tekst */
+}
+
+.header-content {
+  position: relative;
+  z-index: 2; /* boven particles */
+}
+
+.header p.im {
+    font-size: 32px;
+    color: #a5a5a57c;
+}
+
+.header h1.name {
+    font-size: 96px;
+    /* font-family: "Narnoor", sans-serif;
+    font-weight: 600;
+    font-style: normal; */
+}
+
+.header p.about {
+    font-size: 20px;
+    color: #C0C0C0;
+}
+
+.custom-margin {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+

@@ -1,0 +1,49 @@
+.navbar {
+  position: fixed; /* altijd bovenaan */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 72px;
+  background-color: #101325;
+  color: white;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #ff926b;
+}
+
+.navbar a:hover svg{
+  color: #ffffff;
+}
+
+.navbar-center a {
+  padding: 0.5rem 1rem;
+  transition: color 0.3s;
+}
+
+.social-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #1b1f3a;
+  transition: background-color 0.3s;
+}
+
+.social-circle:hover {
+  background-color: #ff926b;
+}
+
+.social-circle svg {
+  width: 18px;
+  height: 18px;
+}
