@@ -11,7 +11,7 @@ function Navbar() {
       </div>
 
       {/* Midden: Navigatie */}
-      <ul className="navbar-center list-unstyled d-flex gap-4 mb-0">
+      <ul className="navbar-center list-unstyled d-flex 2 mb-0">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
