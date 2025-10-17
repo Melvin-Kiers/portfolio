@@ -4,6 +4,7 @@ export const portfolioData = [
     year: "2025",
     tags: ["React", "CSS", "Bootstrap"],
     image: process.env.PUBLIC_URL + "/images/thumbnails/marioBrosInfographic.png",
+    link: "",
   },
   {
     title: "E-commerce Dashboard",
@@ -18,10 +19,11 @@ export const portfolioData = [
     image: process.env.PUBLIC_URL + "/images/thumbnails/f1_api.png",
   },
   {
-    title: "Personal Portfolio Website",
+    title: "Retro Rush",
     year: "2025",
     tags: ["React", "CSS", "Bootstrap"],
     image: process.env.PUBLIC_URL + "/images/thumbnails/retro_rush.png",
+    link: "/projects/retro-rush",
   },
   {
     title: "E-commerce Dashboard",

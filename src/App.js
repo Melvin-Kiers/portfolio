@@ -1,17 +1,13 @@
-import Navbar from './components/Navbar';
-import Header from './components/Header';
-import Intro from './components/Intro';
-import Portfolio from "./components/Portfolio";
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Homepage from "./pages/Homepage";
+import ProjectPage from "./pages/work/ProjectPage";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Header />
-      <Intro />
-      <Portfolio />
-    </div>
+    <Routes>
+      <Route path="/" element={<Homepage />} />
+      <Route path="/projects/:projectId" element={<ProjectPage />} />
+    </Routes>
   );
 }
 

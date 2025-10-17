@@ -86,7 +86,6 @@ section.portfolio {
 
 .portfolio-item-wrapper {
   position: relative;
-  display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%; /* houdt kaarten gelijk */
@@ -140,3 +139,8 @@ section.portfolio {
   position: relative;
 }
 
+.portfolio-item-link {
+  text-decoration: none;
+  color: inherit;
+  display: block; /* maakt hele kaart klikbaar */
+}
