@@ -17,6 +17,7 @@ export const portfolioData = [
     year: "2023",
     tags: ["Figma", "UI/UX"],
     image: process.env.PUBLIC_URL + "/images/thumbnails/f1_api.png",
+    link: "/projects/f1_api",
   },
   {
     title: "Retro Rush",

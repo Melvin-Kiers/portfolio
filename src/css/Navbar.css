@@ -1,5 +1,5 @@
 .navbar {
-  position: fixed; /* altijd bovenaan */
+  position: fixed !important; /* altijd bovenaan */
   top: 0;
   left: 0;
   width: 100%;
