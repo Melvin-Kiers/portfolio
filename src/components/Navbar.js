@@ -1,27 +1,40 @@
-import React from "react";
-import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
+import React, { useState } from "react";
+import { FaFacebookF, FaTwitter, FaInstagram, FaBars, FaTimes } from "react-icons/fa";
 import "../css/Navbar.css";
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <nav className="navbar d-flex justify-content-between align-items-center px-4">
-      {/* Links: Logo */}
+      {/* Logo */}
       <div className="navbar-left">
-        <a href="/" className="navbar-logo">Link</a>
+        <a href="/" className="navbar-logo">
+          <img src={process.env.PUBLIC_URL + "/images/mk-logo.png"} alt="Logo" />
+        </a>
       </div>
 
-      {/* Midden: Navigatie */}
-      <ul className="navbar-center list-unstyled d-flex 2 mb-0">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      {/* Hamburger knop */}
+      <div className="navbar-toggle d-lg-none" onClick={toggleMenu}>
+        {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+      </div>
 
-      {/* Rechts: Social Icons */}
-      <div className="navbar-right d-flex gap-2">
-        <a href="/" className="social-circle"><FaFacebookF /></a>
-        <a href="/" className="social-circle"><FaTwitter /></a>
-        <a href="/" className="social-circle"><FaInstagram /></a>
+      {/* Menu */}
+      <div className={`navbar-menu ${menuOpen ? "open" : ""}`}>
+        <ul className="navbar-center list-unstyled mb-0">
+          <li><a href="#home" onClick={closeMenu}>Home</a></li>
+          <li><a href="#about" onClick={closeMenu}>About</a></li>
+          <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
+        </ul>
+
+        <div className="navbar-right d-flex gap-2">
+          <a href="/" className="social-circle"><FaFacebookF /></a>
+          <a href="/" className="social-circle"><FaTwitter /></a>
+          <a href="/" className="social-circle"><FaInstagram /></a>
+        </div>
       </div>
     </nav>
   );

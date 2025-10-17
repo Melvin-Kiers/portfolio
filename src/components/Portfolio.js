@@ -11,7 +11,7 @@ function Portfolio() {
 
         <div className="row g-4">
           {portfolioData.map((item, index) => (
-            <div key={index} className="col-md-6 col-lg-4">
+            <div key={index} className="col-md-6 col-lg-4 mt-5">
               <PortfolioItem {...item} />
             </div>
           ))}
