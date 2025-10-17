@@ -69,14 +69,6 @@ section.portfolio {
   position: relative;
 }
 
-.portfolio-tag::before {
-  content: "-";
-  position: absolute;
-  width: 35px;
-  height: 35px;
-  margin-right: 5px;
-}
-
 .portfolio-image-wrapper {
   position: relative; /* nodig om overlay te positioneren */
   width: 100%;

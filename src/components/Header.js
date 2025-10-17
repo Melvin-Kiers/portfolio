@@ -38,7 +38,7 @@ function Header() {
       <Particles id="tsparticles" options={particlesOptions} />
       <div className="container header-content">
         <div className="row justify-content-center">
-            <div className="col-12 text-center">
+            <div className="col-12 text-center mb-5">
             <p className="im mb-1">I'm</p>
             <h1 className="name">Melvin Kiers</h1>
                 <p className="about mx-5">

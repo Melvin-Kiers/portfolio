@@ -12,7 +12,7 @@ function Navbar() {
     <nav className="navbar d-flex justify-content-between align-items-center px-4">
       {/* Logo */}
       <div className="navbar-left">
-        <a href="/" className="navbar-logo">
+        <a href={process.env.PUBLIC_URL + "/"} className="navbar-logo">
           <img src={process.env.PUBLIC_URL + "/images/mk-logo.png"} alt="Logo" />
         </a>
       </div>
@@ -31,9 +31,9 @@ function Navbar() {
         </ul>
 
         <div className="navbar-right d-flex gap-2">
-          <a href="/" className="social-circle"><FaFacebookF /></a>
-          <a href="/" className="social-circle"><FaTwitter /></a>
-          <a href="/" className="social-circle"><FaInstagram /></a>
+          <a href={process.env.PUBLIC_URL + "/"} className="social-circle"><FaFacebookF /></a>
+          <a href={process.env.PUBLIC_URL + "/"} className="social-circle"><FaTwitter /></a>
+          <a href={process.env.PUBLIC_URL + "/"} className="social-circle"><FaInstagram /></a>
         </div>
       </div>
     </nav>
