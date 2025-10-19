@@ -1,0 +1,112 @@
+/* ====== LIGHTBOX ====== */
+.simple-lightbox {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  animation: fadeIn 0.3s ease;
+  padding: 20px;
+}
+
+/* Het witte vlak dat de afbeelding bevat */
+.lightbox-inner {
+  position: relative;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 95vw; /* behoud marge aan zijkant */
+  max-height: 90vh; /* behoud marge aan boven/onder */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* De afbeelding zelf */
+.simple-lightbox-image {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+  object-fit: contain;
+  display: block;
+}
+
+/* ====== Terug knop ====== */
+.lightbox-close-btn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 6px 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  transition: all 0.2s ease;
+}
+
+.lightbox-close-btn:hover {
+  background-color: #f8f9fa;
+  transform: scale(1.05);
+}
+
+/* Klikbaar effect thumbnails */
+.clickable-img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.clickable-img:hover {
+  transform: scale(1.03);
+}
+
+/* ====== Captions onder afbeeldingen ====== */
+.image-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-caption {
+  font-size: 0.9rem;
+  color: #6c757d; /* subtiel grijs */
+  margin-top: 8px;
+  max-width: 90%;
+}
+
+
+/* Animatie */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.project-video video {
+  border-radius: 12px;
+}
+
+.accent-before::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 55%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+
+  /* De driehoek zelf */
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 20px solid #9FDDEF; /* blauw driehoekje */
+}

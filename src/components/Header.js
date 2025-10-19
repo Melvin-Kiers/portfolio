@@ -11,7 +11,7 @@ function Header() {
   }, []);
 
   const particlesOptions = {
-    background: { color: "#15182e" },
+    background: { color: "#080D17" },
     fpsLimit: 60,
     interactivity: {
       events: {
@@ -38,8 +38,8 @@ function Header() {
       <Particles id="tsparticles" options={particlesOptions} />
       <div className="container header-content">
         <div className="row justify-content-center">
-            <div className="col-12 text-center mb-5">
-            <p className="im mb-1">I'm</p>
+            <div className="col-12 text-center">
+            <p className="im mb-1">Ik ben</p>
             <h1 className="name">Melvin Kiers</h1>
                 <p className="about mx-5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis

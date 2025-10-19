@@ -1,5 +1,12 @@
 export const portfolioData = [
   {
+    title: "Super Mario Maker 2 - Data display",
+    year: "2025",
+    tags: ["React", "CSS", "Bootstrap"],
+    image: process.env.PUBLIC_URL + "/images/thumbnails/SMM2_API.png",
+    link: "/projects/smm2_api",
+  },
+  {
     title: "Personal Portfolio Website",
     year: "2025",
     tags: ["React", "CSS", "Bootstrap"],
