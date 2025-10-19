@@ -42,11 +42,7 @@ function Header() {
             <p className="im mb-1">Ik ben</p>
             <h1 className="name">Melvin Kiers</h1>
                 <p className="about mx-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                lacinia, purus a lacinia tincidunt, neque sem dignissim odio,
-                quis egestas turpis tortor non nibh. Nulla eleifend condimentum
-                eros, vitae pretium massa consectetur at. Aliquam venenatis,
-                tellus et eleifend consectetur, neque turpis
+                Dit portfolio is nog niet compleet ;D
                 </p>
             </div>  
         </div>

@@ -68,9 +68,6 @@ function Footer() {
           </p>
         </div>
       </footer>
-      <div className="footer_img mt-5">
-        <img src={process.env.PUBLIC_URL + "/images/PeachCastle1.png"} alt="" />
-      </div>
     </div>
     
   );

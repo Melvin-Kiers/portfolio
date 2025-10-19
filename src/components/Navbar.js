@@ -25,9 +25,9 @@ function Navbar() {
       {/* Menu */}
       <div className={`navbar-menu ${menuOpen ? "open" : ""}`}>
         <ul className="navbar-center list-unstyled mb-0">
-          <li><a href="#home" onClick={closeMenu}>Home</a></li>
-          <li><a href="#about" onClick={closeMenu}>About</a></li>
-          <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
+          <li><a href="/" onClick={closeMenu}>Home</a></li>
+          <li><a href="/" onClick={closeMenu}>Projects</a></li>
+          <li><a href="/" onClick={closeMenu}>Contact</a></li>
         </ul>
 
         <div className="navbar-right d-flex gap-2">

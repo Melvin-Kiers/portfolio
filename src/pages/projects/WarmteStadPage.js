@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../../css/projects/SMM2apiPage.css";
 
-function SMM2apiPage() {
+function WarmteStadPage() {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const extraImages = [
@@ -35,23 +34,21 @@ function SMM2apiPage() {
                 &larr; Terug naar portfolio
               </Link>
               <h1 className="project-title mb-4">
-                Super Mario Maker 2 <br /> data visualisatie
+                Warmtestad
               </h1>
               <p>
-                Een interactieve data visualisatie van Super Mario Maker 2 EU VS Mode,
-                gebouwd met React en gekoppeld aan live data via een API en Google Sheets.
+                WarmteStad
               </p>
               <div className="project-details my-4">
-                <span className="badge bg-secondary me-2 px-3 py-2">2025</span>
-                <span className="badge bg-info text-dark me-2 px-3 py-2">React</span>
-                <span className="badge bg-info text-dark me-2 px-3 py-2">CSS</span>
-                <span className="badge bg-info text-dark px-3 py-2">Bootstrap</span>
+                <span className="badge bg-secondary me-2 px-3 py-2">2024 - 2025</span>
+                <span className="badge bg-info text-dark me-2 px-3 py-2">Tailwind</span>
+                <span className="badge bg-info text-dark me-2 px-3 py-2">Figma</span>
               </div>
             </div>
             <div className="col-md-6">
               <img
-                src={process.env.PUBLIC_URL + "/images/thumbnails/SMM2_API.png"}
-                alt="SMM2 API"
+                src={process.env.PUBLIC_URL + "/images/thumbnails/warmteStad.png"}
+                alt="Warmtestad"
                 className="img-fluid rounded shadow-sm"
               />
             </div>
@@ -65,18 +62,13 @@ function SMM2apiPage() {
           <div className="row mb-5">
             <div className="col-lg-6 col-md-12 project-description mb-4">
               <div className="mb-2">
-                <h2 className="fw-bold accent-before">Super Mario Maker 2 EU VS Archive</h2>
+                <h2 className="fw-bold accent-before">WarmteStad</h2>
                 <p className="text-muted">
-                  Een interactieve data visualisatie gebouwd met React, Bootstrap en live data uit een API en Google Sheets.
+                  Ondertitel.
                 </p>
               </div>
               <p>
-                Dit project is een visuele data-analyse van de Europese Versus Mode-statistieken van Super Mario Maker 2.
-                Met behulp van React en Bootstrap heb ik een overzichtelijke interface gebouwd waarin spelersdata
-                automatisch wordt opgehaald via een API en aangevuld met een eigen Google Sheet. De visualisaties geven
-                inzicht in trends, winrates en ranglijsten binnen de community. Het project combineert mijn interesse
-                in data, webontwikkeling en gaming, en laat zien hoe ik interactieve dashboards kan bouwen die data
-                begrijpelijk én aantrekkelijk presenteren.
+                Tekst
               </p>
             </div>
             <div className="col-lg-6 col-md-12">
@@ -106,9 +98,7 @@ function SMM2apiPage() {
           </div>
           <div className="col-lg-10 text">
             <p className="custom_padding">
-              In dit project kunnen gebruikers op specifieke spelers klikken om diepgaande statistieken te bekijken. 
-              Voor elke geselecteerde speler worden overzichtelijke en interactieve visualisaties getoond, zoals pie charts en andere grafieken, die dynamisch worden aangepast op basis van de gegevens van die speler. 
-              Zo kun je direct trends, winrates en andere relevante data analyseren. Deze functie laat zien hoe ik data op een visueel aantrekkelijke manier inzichtelijk kan maken en gebruikers interactief kan betrekken bij complexe datasets.</p>
+              Tekst.</p>
           </div>
           <div className="row mt-4">
             {bottomImages.map((img, index) => (
@@ -127,9 +117,7 @@ function SMM2apiPage() {
           </div>
           <div className="col-lg-10 text">
             <p className="custom_padding">
-              Ook biedt het project een overzicht van de totale, gecombineerde gegevens van alle spelers. 
-              Hiermee kunnen trends en patronen binnen de hele community worden geanalyseerd. 
-              De visualisaties passen zich dynamisch aan op basis van de samengestelde dataset, waardoor zowel individuele prestaties als groepsstatistieken inzichtelijk en interactief worden gepresenteerd.</p>
+              Tekst.</p>
           </div>
           <div className="row mt-4">
             {combinedStatsImages.map((img, index) => (
@@ -198,4 +186,4 @@ function SMM2apiPage() {
   );
 }
 
-export default SMM2apiPage;
+export default WarmteStadPage;
