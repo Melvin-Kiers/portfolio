@@ -7,7 +7,8 @@ function Portfolio() {
   return (
     <section className="portfolio py-5">
       <div className="container">
-        <h2 className="mb-4">Mijn werk</h2>
+        <h3 className="section-subtitle">Bekijk hier</h3>
+        <h2 className="section-title accent-before mb-4">Mijn werk</h2>
 
         <div className="row g-4">
           {portfolioData.map((item, index) => (

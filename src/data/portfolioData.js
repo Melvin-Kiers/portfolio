@@ -6,14 +6,21 @@ export const portfolioData = [
     image: process.env.PUBLIC_URL + "/images/thumbnails/SMM2_API.png",
     link: "/projects/smm2_api",
   },
-    {
+  {
     title: "Visto",
     year: "2024 - 2025",
     tags: ["Vue", "Node.js", "MongoDB"],
     image: process.env.PUBLIC_URL + "/images/thumbnails/visto.png",
     link: "/projects/visto",
   },
-    {
+  {
+    title: "Stage 2025 - Convident",
+    year: "2024 - 2025",
+    tags: ["Vue", "Node.js", "MongoDB"],
+    image: process.env.PUBLIC_URL + "/images/thumbnails/stageConvident.png",
+    link: "/projects/stage-convident",
+  },
+  {
     title: "Formula 1 - API gebruik",
     year: "2024",
     tags: ["Figma", "UI/UX"],
@@ -32,7 +39,7 @@ export const portfolioData = [
     year: "2023 - 2024",
     tags: ["React", "CSS", "Bootstrap"],
     image: process.env.PUBLIC_URL + "/images/thumbnails/marioBrosInfographic.png",
-    link: "/",
+    link: "/projects/mario-bros-infographic",
   },
   {
     title: "Retro Rush",
@@ -42,9 +49,10 @@ export const portfolioData = [
     link: "/projects/retro-rush",
   },
   {
-    title: "Groenreis avondtuur - App concept",
+    title: "Groenreis avontuur - App concept",
     year: "2023",
     tags: ["Vue", "Node.js", "MongoDB"],
     image: process.env.PUBLIC_URL + "/images/thumbnails/groenreisAvontuur.png",
+    link: "/projects/groenreis-avontuur",
   },
 ];

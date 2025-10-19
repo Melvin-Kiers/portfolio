@@ -27,9 +27,9 @@ function Intro() {
           {/* Afbeelding / visueel gedeelte */}
           <div className="col-md-6 text-center">
             <img
-              src="/path/to/your/image.jpg"
+              src={process.env.PUBLIC_URL + "/images/Melvin.jpg"}
               alt="Over mij"
-              className="intro-image img-fluid rounded-3 shadow-sm"
+              className="intro-image-me img-fluid rounded-3 shadow-sm"
             />
           </div>
           <div className="col-md-10 offset-md-1 mt-5 text-center">
