@@ -65,7 +65,7 @@ function GroenReisAvontuurPage() {
       {/* Project content */}
       <section className="project-content py-5">
         <div className="container">
-          <div className="row mb-5">
+          <div className="row mb-2">
             <div className="col-lg-10 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Het doel van de app</h2>
@@ -86,11 +86,11 @@ function GroenReisAvontuurPage() {
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Het maken van schetsen</h2>
                 <p className="text-muted">
-                  op papier
+                  Op papier
                 </p>
               </div>
               <p>
-                Voordat ik bezig ben gegaan met hett uiwerken van het prototype in Figma ben ik eerst bezig gegaan om de bedache ideeën te gaan schetsen.
+                Voordat ik bezig ben gegaan met het uitwerken van het prototype in Figma ben ik eerst bezig gegaan om de bedachte ideeën te gaan schetsen.
               </p>
             </div>
           </div>
@@ -121,7 +121,7 @@ function GroenReisAvontuurPage() {
                 </p>
               </div>
               <p>
-                Nadat ik mijn schtsen klaar had ben ik aan de slag gegaan om de Mid-fi's ui te werken in Figma.
+                Nadat ik mijn schetsen klaar had ben ik aan de slag gegaan om de mid-fi's uit te werken in Figma.
                 Op deze manier kreeg ik een beter beeld over hoe een eindproduct inelkaar zit.
               </p>
             </div>
@@ -152,8 +152,7 @@ function GroenReisAvontuurPage() {
                 </p>
               </div>
               <p>
-                Nadat ik mijn schtsen klaar had ben ik aan de slag gegaan om de Mid-fi's ui te werken in Figma.
-                Op deze manier kreeg ik een beter beeld over hoe een eindproduct inelkaar zit.
+                Nadat ik mijn schtsen klaar had ben ik aan de slag gegaan om de hi-fi's ui te werken in Figma.
               </p>
             </div>
           </div>

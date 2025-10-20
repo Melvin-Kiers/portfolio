@@ -4,23 +4,11 @@ import { Link } from "react-router-dom";
 function WarmteStadPage() {
   const [selectedImage, setSelectedImage] = useState(null);
 
-  const extraImages = [
-    { src: process.env.PUBLIC_URL + "/images/projects/SMM2_API/LeaderBoard.png", alt: "Leaderboard overzicht", },
-    { src: process.env.PUBLIC_URL + "/images/projects/SMM2_API/Story.png", alt: "Spelerstatistieken scherm", },
-    { src: process.env.PUBLIC_URL + "/images/projects/SMM2_API/Footer.png", alt: "Footer", },
-  ];
-
-  const bottomImages = [
-    { src: process.env.PUBLIC_URL + "/images/projects/SMM2_API/Data_1.png", alt: "Data overzicht 1" },
-    { src: process.env.PUBLIC_URL + "/images/projects/SMM2_API/Data_2.png", alt: "Data overzicht 2" },
-    { src: process.env.PUBLIC_URL + "/images/projects/SMM2_API/Data_3.png", alt: "Data overzicht 3" },
-    { src: process.env.PUBLIC_URL + "/images/projects/SMM2_API/Data_4.png", alt: "Data overzicht 4" },
-  ];
-
-  const combinedStatsImages = [
-    { src: process.env.PUBLIC_URL + "/images/projects/SMM2_API/AllStats.png", alt: "Gecombineerde statistieken" },
-    { src: process.env.PUBLIC_URL + "/images/projects/SMM2_API/CustomLeaderBoard.png", alt: "Een andere Leaderboard" },
-    { src: process.env.PUBLIC_URL + "/images/projects/SMM2_API/IntroCLB.png", alt: "Introstukje ander leaderboard + data visualisatie" }
+  const productImages = [
+    { src: process.env.PUBLIC_URL + "/images/projects/Warmtestad/Startscherm.png", alt: "Startscherm" },
+    { src: process.env.PUBLIC_URL + "/images/projects/Warmtestad/Introscherm.png", alt: "Introscherm" },
+    { src: process.env.PUBLIC_URL + "/images/projects/Warmtestad/Vergelijking.png", alt: "Vergelijkings scherm" },
+    { src: process.env.PUBLIC_URL + "/images/projects/Warmtestad/Overzicht.png", alt: "Overzichtscherm" },
   ];
 
   return (
@@ -37,7 +25,8 @@ function WarmteStadPage() {
                 Warmtestad
               </h1>
               <p>
-                WarmteStad
+                Voor Warmtestad, een publieke warmtebedrijf dat samen met de gemeente Groningen werkt aan een CO₂-neutrale toekomst, hebben we als team een interactieve bakfiets ontworpen. 
+                Deze bakfiets maakt op een speelse manier inzichtelijk hoe duurzame warmte bijdraagt aan een schonere stad.
               </p>
               <div className="project-details my-4">
                 <span className="badge bg-secondary me-2 px-3 py-2">2024 - 2025</span>
@@ -62,104 +51,65 @@ function WarmteStadPage() {
           <div className="row mb-5">
             <div className="col-lg-6 col-md-12 project-description mb-4">
               <div className="mb-2">
-                <h2 className="fw-bold accent-before">WarmteStad</h2>
+                <h2 className="fw-bold accent-before">Projectbeschrijving</h2>
                 <p className="text-muted">
-                  Ondertitel.
+                  Wat is er gemaakt?
                 </p>
               </div>
               <p>
-                Tekst
+                Warmtestad ontwikkelt en levert duurzame warmte via warmtenetwerken in de stad Groningen. 
+                Om inwoners bewust te maken van de voordelen en het proces achter deze transitie, hebben wij een interactieve bakfiets ontworpen. 
+                Dit prototype, gemaakt van wit geschilderd hout passend bij de huisstijl van Warmtestad, bevat drie verschillende touchpoints die elk een onderdeel van hun missie belichten.
+                De bakfiets is bedoeld als een informatieve en toegankelijke manier om bewoners te betrekken bij de duurzame plannen van Warmtestad. 
+                Elk onderdeel laat zien hoe de organisatie werkt aan minder CO₂-uitstoot en duurzamere energie in het dagelijks leven.
               </p>
             </div>
             <div className="col-lg-6 col-md-12">
               <img
-                src={process.env.PUBLIC_URL + "/images/projects/SMM2_API/Home.png"}
+                src={process.env.PUBLIC_URL + "/images/projects/Warmtestad/Bakfiets.jpg"}
                 alt="SMM2 API"
                 className="img-fluid rounded shadow-sm"
               />
             </div>
           </div>
 
-          {/* Extra afbeeldingen (klikbaar) */}
-          <div className="project-extra-images row mt-4">
-            {extraImages.map((img, index) => (
-              <div className="col-md-6 col-lg-4 text-center" key={index}>
-                <div className="image-wrapper">
-                  <img
-                    src={img.src}
-                    alt={img.alt}
-                    className="img-fluid rounded shadow-sm clickable-img"
-                    onClick={() => setSelectedImage(img.src)}
-                  />
-                  <p className="image-caption mt-2">{img.alt}</p>
-                </div>
+          <div className="row">
+            <div className="col-lg-10 project-description mb-4">
+              <div className="mb-2">
+                <h2 className="fw-bold accent-before">Mijn bijdrage – De kookplaten</h2>
+                <p className="text-muted">
+                  Gas vs Inductie
+                </p>
               </div>
-            ))}
-          </div>
-          <div className="col-lg-10 text">
-            <p className="custom_padding">
-              Tekst.</p>
-          </div>
-          <div className="row mt-4">
-            {bottomImages.map((img, index) => (
-              <div className="col-sm-6 text-center" key={index}>
-                <div className="image-wrapper">
-                  <img
-                    src={img.src}
-                    alt={img.alt}
-                    className="img-fluid rounded shadow-sm clickable-img"
-                    onClick={() => setSelectedImage(img.src)}
-                  />
-                  <p className="image-caption mt-2">{img.alt}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="col-lg-10 text">
-            <p className="custom_padding">
-              Tekst.</p>
-          </div>
-          <div className="row mt-4">
-            {combinedStatsImages.map((img, index) => (
-              <div className="col-md-4 text-center mb-3" key={index}>
-                <div className="image-wrapper">
-                  <img
-                    src={img.src}
-                    alt={img.alt}
-                    className="img-fluid rounded shadow-sm clickable-img"
-                    onClick={() => setSelectedImage(img.src)}
-                  />
-                  <p className="image-caption mt-2">{img.alt}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="project-conclusion mt-2 text-center">
-            <p>
-              Wil je het project zelf ervaren? Bekijk de interactieve data visualisatie in de video, of hier:{" "} 
-              <a
-                href="https://melvin-kiers.github.io/smm2_eu_vs_archive/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Super Mario Maker 2 EU VS Archive
-              </a>.
-            </p>
-
-            <div className="project-video mt-2 text-center">
-              <video
-                width="100%"
-                height="auto"
-                controls
-                poster={process.env.PUBLIC_URL + "/images/projects/SMM2_API/Home.png"}
-              >
-                <source
-                  src={process.env.PUBLIC_URL + "/videos/SMM2_Video.mp4"}
-                  type="video/mp4"
-                />
-                Je browser ondersteunt deze video niet.
-              </video>
+              <p>
+                Mijn focus binnen het project lag op het tweede touchpoint: de kookeilanden. 
+                Dit onderdeel laat gebruikers op interactieve wijze ervaren wat het verschil is tussen koken op gas en inductie.
+                Door een pan op de plaat te plaatsen, start een simulatie waarin te zien is hoeveel energie wordt verbruikt, wat dit kost en hoeveel CO₂ hierbij vrijkomt. 
+                Terwijl de scores oplopen, verschijnen er vergelijkende feiten, bijvoorbeeld hoeveel gevlogen kilometers of plastic tassen overeenkomen met de uitstoot.
+                Na afloop krijgt de gebruiker een overzicht van de jaarlijkse verschillen tussen gas en inductie, wat inzicht geeft in de voordelen van duurzaam koken.
+                Dit interactieve systeem is ontwikkeld met HTML, CSS en JavaScript.
+              </p>
             </div>
+          </div>
+
+          <div className="row mt-4">
+            {productImages.map((img, index) => (
+              <div className="col-md-6 text-center mb-3" key={index}>
+                <div className="image-wrapper">
+                  <img
+                    src={img.src}
+                    alt={img.alt}
+                    className="img-fluid rounded shadow-sm clickable-img"
+                    onClick={() => setSelectedImage(img.src)}
+                  />
+                  <p className="image-caption mt-2">{img.alt}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="project-conclusion mt-2 text-center">
+            <p> Dankzij deze technieken is een leerzame, visuele en gebruiksvriendelijke ervaring gecreëerd die laat zien hoe kleine keuzes bijdragen aan een duurzamere toekomst.</p>
           </div>
         </div>
       </section>

@@ -95,7 +95,7 @@ function VistoPage() {
             </div>
           </div>
 
-          <div className="row mb-5">
+          <div className="row">
             <div className="col-lg-10 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Vooronderzoek doen</h2>
@@ -113,7 +113,7 @@ function VistoPage() {
             </div>
           </div>
 
-          <div className="row mb-5">
+          <div className="row">
             <div className="col-lg-10 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Lo-fi/Mid-fi prototypes in Figma</h2>
@@ -148,7 +148,7 @@ function VistoPage() {
             ))}
           </div>
 
-          <div className="row my-5">
+          <div className="row mt-5">
             <div className="col-lg-10 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Uitwerken van de Hi-fi in Figma</h2>
@@ -182,7 +182,7 @@ function VistoPage() {
             ))}
           </div>
 
-          <div className="row my-5">
+          <div className="row mt-3">
             <div className="col-lg-10 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Landingspage</h2>

@@ -4,23 +4,11 @@ import { Link } from "react-router-dom";
 function RetroRushPage() {
   const [selectedImage, setSelectedImage] = useState(null);
 
-  const extraImages = [
-    { src: process.env.PUBLIC_URL + "/images/projects/SMM2_API/LeaderBoard.png", alt: "Leaderboard overzicht", },
-    { src: process.env.PUBLIC_URL + "/images/projects/SMM2_API/Story.png", alt: "Spelerstatistieken scherm", },
-    { src: process.env.PUBLIC_URL + "/images/projects/SMM2_API/Footer.png", alt: "Footer", },
-  ];
-
-  const bottomImages = [
-    { src: process.env.PUBLIC_URL + "/images/projects/SMM2_API/Data_1.png", alt: "Data overzicht 1" },
-    { src: process.env.PUBLIC_URL + "/images/projects/SMM2_API/Data_2.png", alt: "Data overzicht 2" },
-    { src: process.env.PUBLIC_URL + "/images/projects/SMM2_API/Data_3.png", alt: "Data overzicht 3" },
-    { src: process.env.PUBLIC_URL + "/images/projects/SMM2_API/Data_4.png", alt: "Data overzicht 4" },
-  ];
-
-  const combinedStatsImages = [
-    { src: process.env.PUBLIC_URL + "/images/projects/SMM2_API/AllStats.png", alt: "Gecombineerde statistieken" },
-    { src: process.env.PUBLIC_URL + "/images/projects/SMM2_API/CustomLeaderBoard.png", alt: "Een andere Leaderboard" },
-    { src: process.env.PUBLIC_URL + "/images/projects/SMM2_API/IntroCLB.png", alt: "Introstukje ander leaderboard + data visualisatie" }
+  const RRImages = [
+    { src: process.env.PUBLIC_URL + "/images/projects/Retro_Rush/Startscherm.png", alt: "Startscherm", },
+    { src: process.env.PUBLIC_URL + "/images/projects/Retro_Rush/Introscherm.png", alt: "Introscherm", },
+    { src: process.env.PUBLIC_URL + "/images/projects/Retro_Rush/Overzichtscherm.png", alt: "Overzichtscherm", },
+    { src: process.env.PUBLIC_URL + "/images/projects/Retro_Rush/Minigame.png", alt: "Minigamescherm", },
   ];
 
   return (
@@ -37,7 +25,8 @@ function RetroRushPage() {
                 Retro Rush
               </h1>
               <p>
-                Retro Rush
+                Retro Rush is een interactief HTML/CSS-spel waarin nostalgie en competitie samenkomen. 
+                Het spel brengt de sfeer van klassieke arcadegames tot leven in een modern jasje en nodigt spelers uit om het tegen elkaar op te nemen in een één-op-één strijd vol snelheid, tactiek en plezier.
               </p>
               <div className="project-details my-4">
                 <span className="badge bg-secondary me-2 px-3 py-2">2024 - 2025</span>
@@ -47,8 +36,8 @@ function RetroRushPage() {
             </div>
             <div className="col-md-6">
               <img
-                src={process.env.PUBLIC_URL + "/images/thumbnails/Visto.png"}
-                alt="SMM2 API"
+                src={process.env.PUBLIC_URL + "/images/thumbnails/retro_rush.png"}
+                alt="Retro Rush"
                 className="img-fluid rounded shadow-sm"
               />
             </div>
@@ -59,31 +48,28 @@ function RetroRushPage() {
       {/* Project content */}
       <section className="project-content py-5">
         <div className="container">
-          <div className="row mb-5">
-            <div className="col-lg-6 col-md-12 project-description mb-4">
+          <div className="row">
+            <div className="col-lg-10 project-description mb-4">
               <div className="mb-2">
-                <h2 className="fw-bold accent-before">Visto</h2>
+                <h2 className="fw-bold accent-before">Retro Rush</h2>
                 <p className="text-muted">
-                  Ondertitel.
+                  Hoe werkt het?
                 </p>
               </div>
               <p>
-                Tekst
+                Voor mijn portfolio heb ik gewerkt aan een uniek project genaamd Retro Rush, een sociaal en competitief spel dat oude videogame-elementen combineert met moderne technologie. 
+                Het spel wordt gespeeld op een tablet die in het midden van een fysiek speelbord is ingebouwd. 
+                Twee spelers nemen om de beurt plaats aan het bord en spelen korte minigames tegen elkaar, geïnspireerd op old-school arcadeklassiekers.
+                Naast de digitale gameplay maakt Retro Rush ook gebruik van Micro:bit-technologie. 
+                Deze microcontrollers zijn verwerkt in het fysieke speelbord en zorgen voor extra interactieve elementen, zoals lichtsignalen, scoreweergave of sensoren die reageren op spelersacties.
               </p>
-            </div>
-            <div className="col-lg-6 col-md-12">
-              <img
-                src={process.env.PUBLIC_URL + "/images/projects/SMM2_API/Home.png"}
-                alt="SMM2 API"
-                className="img-fluid rounded shadow-sm"
-              />
             </div>
           </div>
 
           {/* Extra afbeeldingen (klikbaar) */}
           <div className="project-extra-images row mt-4">
-            {extraImages.map((img, index) => (
-              <div className="col-md-6 col-lg-4 text-center" key={index}>
+            {RRImages.map((img, index) => (
+              <div className="col-sm-6 col-lg-3 text-center" key={index}>
                 <div className="image-wrapper">
                   <img
                     src={img.src}
@@ -96,69 +82,53 @@ function RetroRushPage() {
               </div>
             ))}
           </div>
-          <div className="col-lg-10 text">
-            <p className="custom_padding">
-              Tekst.</p>
-          </div>
-          <div className="row mt-4">
-            {bottomImages.map((img, index) => (
-              <div className="col-sm-6 text-center" key={index}>
-                <div className="image-wrapper">
-                  <img
-                    src={img.src}
-                    alt={img.alt}
-                    className="img-fluid rounded shadow-sm clickable-img"
-                    onClick={() => setSelectedImage(img.src)}
-                  />
-                  <p className="image-caption mt-2">{img.alt}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="col-lg-10 text">
-            <p className="custom_padding">
-              Tekst.</p>
-          </div>
-          <div className="row mt-4">
-            {combinedStatsImages.map((img, index) => (
-              <div className="col-md-4 text-center mb-3" key={index}>
-                <div className="image-wrapper">
-                  <img
-                    src={img.src}
-                    alt={img.alt}
-                    className="img-fluid rounded shadow-sm clickable-img"
-                    onClick={() => setSelectedImage(img.src)}
-                  />
-                  <p className="image-caption mt-2">{img.alt}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="project-conclusion mt-2 text-center">
-            <p>
-              Wil je het project zelf ervaren? Bekijk de interactieve data visualisatie in de video, of hier:{" "} 
-              <a
-                href="https://melvin-kiers.github.io/smm2_eu_vs_archive/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Super Mario Maker 2 EU VS Archive
-              </a>.
-            </p>
 
-            <div className="project-video mt-2 text-center">
-              <video
-                width="100%"
-                height="auto"
-                controls
-                poster={process.env.PUBLIC_URL + "/images/projects/SMM2_API/Home.png"}
-              >
-                <source
-                  src={process.env.PUBLIC_URL + "/videos/SMM2_Video.mp4"}
-                  type="video/mp4"
-                />
-                Je browser ondersteunt deze video niet.
-              </video>
+          <div className="row mt-5">
+            <div className="col-lg-8 project-description mb-4">
+              <div className="mb-2">
+                <h2 className="fw-bold accent-before">Extra gemaakte dingen</h2>
+                <p className="text-muted">
+                  Boxart en speeldoos
+                </p>
+              </div>
+              <p>
+                Om het spel goed te presenteren en te promoten, heb ik daarnaast gewerkt aan verschillende visuele en fysieke ontwerpelementen. 
+                Zo heb ik mock-ups gemaakt om het uiteindelijke ontwerp van het spel en de gebruikersinterface duidelijk te visualiseren. 
+                Deze mock-ups hielpen bij het bepalen van de lay-out, de stijl en de algemene uitstraling van Retro Rush.
+              </p>
+            </div>
+            <div className="col-md-4">
+              <img
+                src={process.env.PUBLIC_URL + "/images/projects/Retro_Rush/Speeldoos.png"}
+                alt="Retro Rush"
+                className="img-fluid rounded shadow-sm"
+              />
+            </div>
+          </div>
+
+          <div className="row mt-5">
+            <div className="col-md-4">
+              <img
+                src={process.env.PUBLIC_URL + "/images/projects/Retro_Rush/RetroRushGame.jpg"}
+                alt="Retro Rush"
+                className="img-fluid rounded shadow-sm"
+              />
+            </div>
+            <div className="col-lg-8 project-description mb-4">
+              <div className="mb-2">
+                <h2 className="fw-bold">Conclusie</h2>
+                <p className="text-muted">
+                  Wat heb ik geleerd
+                </p>
+              </div>
+              <p>
+                Ook heb ik fliers en promotiemateriaal ontworpen om het spel op een aantrekkelijke manier onder de aandacht te brengen. 
+                Deze fliers sluiten visueel aan bij de retrostijl van het spel en benadrukken het competitieve, gezellige karakter ervan. 
+                Daarnaast heb ik een speeldoos ontworpen waarin het bord, de tablet en de accessoires netjes kunnen worden opgeborgen en gepresenteerd. 
+                De doos is vormgegeven in dezelfde retrolook als het spel zelf, zodat het geheel een professioneel en samenhangend uiterlijk heeft.
+                Met Retro Rush heb ik niet alleen mijn technische vaardigheden in HTML, CSS en hardware-integratie verder ontwikkeld, maar ook mijn oog voor vormgeving, presentatie en branding versterkt. 
+                Het project toont aan hoe digitale technologie, fysiek design en creatieve promotie samen kunnen komen in één compleet en speels eindproduct.
+              </p>
             </div>
           </div>
         </div>
