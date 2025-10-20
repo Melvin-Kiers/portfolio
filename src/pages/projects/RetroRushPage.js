@@ -29,9 +29,9 @@ function RetroRushPage() {
                 Het spel brengt de sfeer van klassieke arcadegames tot leven in een modern jasje en nodigt spelers uit om het tegen elkaar op te nemen in een één-op-één strijd vol snelheid, tactiek en plezier.
               </p>
               <div className="project-details my-4">
-                <span className="badge bg-secondary me-2 px-3 py-2">2024 - 2025</span>
-                <span className="badge bg-info text-dark me-2 px-3 py-2">Tailwind</span>
-                <span className="badge bg-info text-dark me-2 px-3 py-2">Figma</span>
+                <span className="badge bg-secondary me-2 px-3 py-2">2023</span>
+                <span className="badge bg-info text-dark me-2 px-3 py-2">HTML/CSS/JS</span>
+                <span className="badge bg-info text-dark me-2 px-3 py-2">Micro:Bit</span>
               </div>
             </div>
             <div className="col-md-6">

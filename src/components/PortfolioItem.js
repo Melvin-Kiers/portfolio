@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom"; // ✅ voor interne routing
+import { Link } from "react-router-dom";
 import "../css/PortfolioItem.css";
 
 function PortfolioItem({ title, year, tags, image, link }) {

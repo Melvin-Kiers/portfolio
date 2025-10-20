@@ -44,8 +44,11 @@ function SMM2apiPage() {
               <div className="project-details my-4">
                 <span className="badge bg-secondary me-2 px-3 py-2">2025</span>
                 <span className="badge bg-info text-dark me-2 px-3 py-2">React</span>
-                <span className="badge bg-info text-dark me-2 px-3 py-2">CSS</span>
-                <span className="badge bg-info text-dark px-3 py-2">Bootstrap</span>
+                <span className="badge bg-info text-dark me-2 px-3 py-2">JS</span>
+                <span className="badge bg-info text-dark me-2 px-3 py-2">API</span>
+                <span className="badge bg-info text-dark me-2 px-3 py-2">Git</span>
+                <span className="badge bg-info text-dark me-2 px-3 py-2">Bootstrap</span>
+                <span className="badge bg-info text-dark px-3 py-2">CSS</span>
               </div>
             </div>
             <div className="col-md-6">

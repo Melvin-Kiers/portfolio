@@ -46,8 +46,7 @@ function GroenReisAvontuurPage() {
                 Deze app combineert interactieve functies en een gebruiksvriendelijke interface om gebruikers te informeren, inspireren en begeleiden in hun reis naar duurzame mobiliteit.
               </p>
               <div className="project-details my-4">
-                <span className="badge bg-secondary me-2 px-3 py-2">2024 - 2025</span>
-                <span className="badge bg-info text-dark me-2 px-3 py-2">Tailwind</span>
+                <span className="badge bg-secondary me-2 px-3 py-2">2023</span>
                 <span className="badge bg-info text-dark me-2 px-3 py-2">Figma</span>
               </div>
             </div>

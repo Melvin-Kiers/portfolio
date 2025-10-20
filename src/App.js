@@ -2,6 +2,8 @@ import { Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import Navbar from './components/Navbar';
 import Homepage from "./pages/Homepage";
+import Projectspage from "./pages/Projectspage";
+import ContactPage from "./pages/ContactPage";
 import SMM2apiPage from "./pages/projects/SMM2apiPage";
 import StageConvidentPage from "./pages/projects/StageConvidentPage";
 import VistoPage from "./pages/projects/VistoPage";
@@ -21,6 +23,9 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Homepage />} />
+          <Route path="/projects" element={<Projectspage />} />
+          <Route path="/contact" element={<ContactPage />} />
+
           <Route path="/projects/smm2_api" element={<SMM2apiPage />} />
           <Route path="/projects/stage-convident" element={<StageConvidentPage />} />  
           <Route path="/projects/visto" element={<VistoPage />} />
