@@ -51,7 +51,7 @@ function VistoPage() {
             </div>
             <div className="col-md-6">
               <img
-                src={process.env.PUBLIC_URL + "/images/thumbnails/Visto.png"}
+                src={process.env.PUBLIC_URL + "/images/thumbnails/visto.png"}
                 alt="Visto"
                 className="img-fluid rounded shadow-sm"
               />
@@ -157,11 +157,11 @@ function VistoPage() {
                 </p>
               </div>
               <p>
-                Tijdens het onderzoek werkte ik samen met verschillende soorten onderzoekers en participanten om inzicht te krijgen in hun werkwijze en behoeften. 
-                Door gesprekken, observaties en testmomenten leerde ik hoe uiteenlopend hun verwachtingen zijn van een onderzoeksplatform. 
-                Deze samenwerking hielp om knelpunten in de communicatie tussen onderzoeker en participant bloot te leggen. 
-                Het was waardevol om te zien hoe kleine verschillen in onderzoeksstijl invloed hebben op het gebruik van de tool. 
-                Deze inzichten vormden de basis voor de verdere ontwerpbeslissingen in het project.
+                Na de testfase werkte ik het ontwerp uit tot een high-fidelity prototype in Figma. 
+                In deze fase kreeg het ontwerp zijn uiteindelijke look & feel, inclusief kleuren, iconografie en typografie die passen bij de visuele identiteit van Visto. 
+                De gebruikerservaring werd verder aangescherpt door aandacht te besteden aan micro-interacties en duidelijke navigatie. 
+                Het doel was een professioneel en intuïtief ontwerp dat direct toepasbaar is voor ontwikkeling. 
+                De hi-fi prototype fungeerde uiteindelijk als visueel referentiepunt voor het eindproduct.
               </p>
             </div>
           </div>
@@ -242,8 +242,13 @@ function VistoPage() {
           </div>
 
           <div className="project-conclusion mt-2 text-center">
-            <p>Na mijn betrokkenheid bij Visto ben ik uit het project gestapt, waarna twee andere teamleden het verder hebben uitgebouwd. 
-              Het is mooi om te zien hoe het concept waar ik aan heb meegewerkt, nu wordt doorontwikkeld tot een volwaardige tool die onderzoekers en participanten helpt om samen betekenisvolle inzichten te creëren.</p>
+            <p>
+              Na een intensieve periode binnen het Visto-project heb ik besloten mijn rol over te dragen om me volledig te kunnen richten op mijn stage, 
+              waar ik de kans kreeg om mijn vaardigheden verder te verdiepen en nieuwe ervaringen op te doen. 
+              Twee teamleden hebben het project daarna succesvol voortgezet en verder uitgebouwd. 
+              Het is mooi om te zien hoe het concept waar ik aan heb meegewerkt zich verder ontwikkelt tot een volwaardige tool 
+              die onderzoekers en participanten helpt om samen betekenisvolle inzichten te creëren.
+            </p>
           </div>
         </div>
       </section>

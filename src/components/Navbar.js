@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaFacebookF, FaTwitter, FaInstagram, FaBars, FaTimes } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaInstagram, FaBars, FaTimes } from "react-icons/fa";
 import "../css/Navbar.css";
 
 function Navbar() {
@@ -25,14 +25,14 @@ function Navbar() {
       {/* Menu */}
       <div className={`navbar-menu ${menuOpen ? "open" : ""}`}>
         <ul className="navbar-center list-unstyled mb-0">
-          <li><a href="/" onClick={closeMenu}>Home</a></li>
-          <li><a href="/" onClick={closeMenu}>Projects</a></li>
-          <li><a href="/" onClick={closeMenu}>Contact</a></li>
+          <li><a href={process.env.PUBLIC_URL + "/"} onClick={closeMenu}>Home</a></li>
+          <li><a href={process.env.PUBLIC_URL + "/"} onClick={closeMenu}>Projects</a></li>
+          <li><a href={process.env.PUBLIC_URL + "/"} onClick={closeMenu}>Contact</a></li>
         </ul>
 
         <div className="navbar-right d-flex gap-2">
-          <a href={process.env.PUBLIC_URL + "/"} className="social-circle"><FaFacebookF /></a>
-          <a href={process.env.PUBLIC_URL + "/"} className="social-circle"><FaTwitter /></a>
+          <a href={process.env.PUBLIC_URL + "/"} className="social-circle"><FaLinkedin /></a>
+          <a href={process.env.PUBLIC_URL + "/"} className="social-circle"><FaGithub /></a>
           <a href={process.env.PUBLIC_URL + "/"} className="social-circle"><FaInstagram /></a>
         </div>
       </div>

@@ -1,10 +1,9 @@
 import React from "react";
 import "../css/Footer.css";
 import {
-  FaTwitter,
-  FaTwitch,
-  FaYoutube,
-  FaDiscord,
+  FaLinkedin,
+  FaGithub,
+  FaInstagram,
 } from "react-icons/fa";
 
 function Footer() {
@@ -17,16 +16,15 @@ function Footer() {
             <div className="col-sm-6 col-md-3 item">
               <h3>Navigation</h3>
               <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">Projects</a></li>
-                <li><a href="/">Contact</a></li>
+                <li><a href={process.env.PUBLIC_URL + "/"}>Home</a></li>
+                <li><a href={process.env.PUBLIC_URL + "/"}>Projects</a></li>
+                <li><a href={process.env.PUBLIC_URL + "/"}>Contact</a></li>
               </ul>
             </div>
 
             <div className="col-sm-6 col-md-3 item">
               <h3>Credits</h3>
               <ul>
-                <li><span>My very first project 🎉</span></li>
                 <li><span>Built with React</span></li>
                 <li>
                   <a
@@ -42,29 +40,27 @@ function Footer() {
 
             {/* About text */}
             <div className="col-md-6 item text">
-              <h3>Community Project</h3>
+              <h3>Mijn portfolio</h3>
               <p>
-                This website was created as my very first project to bring our
-                gaming community together. Feedback and suggestions are always
-                welcome!
+                Dit portfolio is bedoeld om mijn werk, projecten en vaardigheden te laten zien aan potentiële opdrachtgevers, werkgevers en andere geïnteresseerden.
+                Hier vind je een selectie van wat ik heb gemaakt, met aandacht voor kwaliteit, creativiteit en groei.
               </p>
             </div>
 
             {/* Social media */}
             <div className="col item social mt-5">
-              <a href="https://www.twitch.tv/melvin_mm2"><FaTwitch /></a>
-              <a href="https://x.com/Melvin_Kiers?t=wCyVgFg1oGZe7Rs8ulzAxg&s=09"><FaTwitter /></a>
-              <a href="https://www.youtube.com/@Melvin_MM2"><FaYoutube /></a>
-              <a href="https://discord.com/users/486926410129211392"><FaDiscord /></a>
+              <a href={process.env.PUBLIC_URL + "/"} className="social-circle"><FaLinkedin /></a>
+              <a href={process.env.PUBLIC_URL + "/"} className="social-circle"><FaGithub /></a>
+              <a href={process.env.PUBLIC_URL + "/"} className="social-circle"><FaInstagram /></a>
             </div>
           </div>
 
           {/* Copyright */}
           <p className="copyright">
-            © {new Date().getFullYear()} My Game Community – All rights reserved
+            © {new Date().getFullYear()} My portfolio – All rights reserved
           </p>
           <p className="copyright">
-            Made with ❤️ by Melvin MM2
+            Made by Melvin Kiers
           </p>
         </div>
       </footer>

@@ -8,7 +8,7 @@ function Intro() {
         <div className="row align-items-center">
           
           {/* Tekstgedeelte */}
-          <div className="col-md-6 about-me mb-4 mb-md-0">
+          <div className="col-md-8 about-me mb-4 mb-md-0">
             <header className="mb-3">
               <h3 className="section-subtitle">About</h3>
               <h2 className="section-title accent-before">Get to know me better</h2>
@@ -25,7 +25,7 @@ function Intro() {
           </div>
 
           {/* Afbeelding / visueel gedeelte */}
-          <div className="col-md-6 text-center">
+          <div className="col-md-4 text-center">
             <img
               src={process.env.PUBLIC_URL + "/images/Melvin.jpg"}
               alt="Over mij"
