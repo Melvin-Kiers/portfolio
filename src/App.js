@@ -13,6 +13,8 @@ import MarioBrosInfographicPage from "./pages/projects/MarioBrosInfographicPage"
 import RetroRushPage from "./pages/projects/RetroRushPage";
 import GroenReisAvontuurPage from "./pages/projects/GroenReisAvontuur";
 import Footer from "./components/Footer";
+import NotFoundPage from "./pages/NotFoundPage";
+
 
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
           <Route path="/projects/mario-bros-infographic" element={<MarioBrosInfographicPage />} />
           <Route path="/projects/retro-rush" element={<RetroRushPage />} />
           <Route path="/projects/groenreis-avontuur" element={<GroenReisAvontuurPage />} />
+
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
 

@@ -1,0 +1,63 @@
+.contact-page {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+.contact-card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  padding: 3rem 2rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.contact-card .section-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-card .section-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.contact-card .intro-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.contact-card a {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.contact-card a:hover {
+  color: #0056b3;
+}
+
+/* Social icons */
+.contact-card .social-icons a.social-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: #e9ecef;
+  border-radius: 50%;
+  color: #000;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.contact-card .social-icons a.social-circle:hover {
+  background-color: #007bff;
+  color: #fff;
+  transform: translateY(-3px);
+}
