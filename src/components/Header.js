@@ -25,7 +25,7 @@ function Header() {
       color: { value: "#ffffff" },
       links: { enable: true, distance: 150, color: "#ffffff", opacity: 0.2, width: 1 },
       move: { enable: true, speed: 1, outModes: { default: "bounce" } },
-      number: { value: 50, density: { enable: true, area: 800 } },
+      number: { value: 20, density: { enable: true, area: 800 } },
       opacity: { value: 0.2 },
       shape: { type: "circle" },
       size: { value: { min: 1, max: 5 } },
