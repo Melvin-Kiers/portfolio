@@ -42,7 +42,7 @@ function Header() {
             <p className="im mb-1">Ik ben</p>
             <h1 className="name">Melvin Kiers</h1>
                 <p className="about mx-5">
-                Dit portfolio is nog niet compleet 🐱
+                Welkom op mijn portfolio website!
                 </p>
             </div>  
         </div>

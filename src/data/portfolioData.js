@@ -16,12 +16,12 @@ export const portfolioData = [
     {
     title: "Visto",
     year: "2024 - 2025",
-    tags: ["Tailwind", "Figma"],
+    tags: ["Tailwind", "Figma", "After Effects"],
     image: process.env.PUBLIC_URL + "/images/thumbnails/visto.png",
     link: "/projects/visto",
   },
   {
-    title: "Formula 1 - API gebruik",
+    title: "Formula 1 - API Data display",
     year: "2024",
     tags: ["React", "JS", "API", "Git", "CSS"],
     image: process.env.PUBLIC_URL + "/images/thumbnails/f1_api.png",
@@ -51,7 +51,7 @@ export const portfolioData = [
   {
     title: "Groenreis avontuur - App concept",
     year: "2023",
-    tags: ["Figma"],
+    tags: ["Figma", "BlocksmithXR"],
     image: process.env.PUBLIC_URL + "/images/thumbnails/groenreisAvontuur.png",
     link: "/projects/groenreis-avontuur",
   },

@@ -18,11 +18,11 @@ function F1apiPage() {
         <div className="container text-white">
           <div className="row align-items-center justify-content-center">
             <div className="col-md-6">
-              <Link to="/" className="btn btn-outline-light mb-3">
+              <Link to="/projects" className="btn btn-outline-light mb-3">
                 &larr; Terug naar portfolio
               </Link>
               <h1 className="project-title mb-4">
-                F1 API Datavisualisatie
+                Formula 1 Datavisualisatie
               </h1>
               <p>
                 Om mijn passie voor Formule 1 en technologie te combineren, heb ik als onderdeel van het schoolvak PED (Programmeren en Dataverwerking) een project ontwikkeld waarin ik gebruikmaak van een bestaande Formule 1 API om racegegevens visueel weer te geven.

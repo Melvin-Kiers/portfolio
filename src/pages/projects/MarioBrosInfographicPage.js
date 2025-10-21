@@ -5,22 +5,10 @@ function MarioBrosInfographicPage() {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const extraImages = [
-    { src: process.env.PUBLIC_URL + "/images/projects/SMM2_API/LeaderBoard.png", alt: "Leaderboard overzicht", },
-    { src: process.env.PUBLIC_URL + "/images/projects/SMM2_API/Story.png", alt: "Spelerstatistieken scherm", },
-    { src: process.env.PUBLIC_URL + "/images/projects/SMM2_API/Footer.png", alt: "Footer", },
-  ];
-
-  const bottomImages = [
-    { src: process.env.PUBLIC_URL + "/images/projects/SMM2_API/Data_1.png", alt: "Data overzicht 1" },
-    { src: process.env.PUBLIC_URL + "/images/projects/SMM2_API/Data_2.png", alt: "Data overzicht 2" },
-    { src: process.env.PUBLIC_URL + "/images/projects/SMM2_API/Data_3.png", alt: "Data overzicht 3" },
-    { src: process.env.PUBLIC_URL + "/images/projects/SMM2_API/Data_4.png", alt: "Data overzicht 4" },
-  ];
-
-  const combinedStatsImages = [
-    { src: process.env.PUBLIC_URL + "/images/projects/SMM2_API/AllStats.png", alt: "Gecombineerde statistieken" },
-    { src: process.env.PUBLIC_URL + "/images/projects/SMM2_API/CustomLeaderBoard.png", alt: "Een andere Leaderboard" },
-    { src: process.env.PUBLIC_URL + "/images/projects/SMM2_API/IntroCLB.png", alt: "Introstukje ander leaderboard + data visualisatie" }
+    { src: process.env.PUBLIC_URL + "/images/projects/MarioBros_Infographic/SMB1.png", alt: "Gemaakte SMB1 assets", },
+    { src: process.env.PUBLIC_URL + "/images/projects/MarioBros_Infographic/SMB1_Castle.png", alt: "Gemaakte SMB1 kaseel assets", },
+    { src: process.env.PUBLIC_URL + "/images/projects/MarioBros_Infographic/SMB2.png", alt: "Gemaakte SMB2 assets", },
+    { src: process.env.PUBLIC_URL + "/images/projects/MarioBros_Infographic/SMW.png", alt: "Gemaakte SMW assets", },
   ];
 
   return (
@@ -30,14 +18,16 @@ function MarioBrosInfographicPage() {
         <div className="container text-white">
           <div className="row align-items-center justify-content-center">
             <div className="col-md-6">
-              <Link to="/" className="btn btn-outline-light mb-3">
+              <Link to="/projects" className="btn btn-outline-light mb-3">
                 &larr; Terug naar portfolio
               </Link>
               <h1 className="project-title mb-4">
                 Mario Bros. Infographic
               </h1>
               <p>
-                Mario Bros. Infographic
+                Voor dit (school)project heb ik een interactieve scrollytelling-website gemaakt die de geschiedenis van de 2D Super Mario Bros.-games vertelt. 
+                Terwijl je naar beneden scrolt, ontdek je per spel wat het uniek maakte, 
+                ondersteund door animaties, visuals en interactieve elementen. Het project combineert webdesign, storytelling en nostalgie tot één dynamische beleving.
               </p>
               <div className="project-details my-4">
                 <span className="badge bg-secondary me-2 px-3 py-2">2023 - 2024</span>
@@ -58,31 +48,60 @@ function MarioBrosInfographicPage() {
       {/* Project content */}
       <section className="project-content py-5">
         <div className="container">
-          <div className="row mb-5">
-            <div className="col-lg-6 col-md-12 project-description mb-4">
+          <div className="row mb-3">
+            <div className="col-lg-10 project-description mb-4">
               <div className="mb-2">
-                <h2 className="fw-bold accent-before">Mario Bros. Infographic</h2>
+                <h2 className="fw-bold accent-before">Scrollytelling-website</h2>
                 <p className="text-muted">
-                  Ondertitel.
+                  Wat houdt het in?
                 </p>
               </div>
               <p>
-                Tekst
+                De kern van dit project is een interactieve scrollytelling-ervaring waarin de gebruiker door de geschiedenis van de 2D Super Mario Bros.-games beweegt.
+                Elke sectie vertegenwoordigt een ander tijdperk binnen de Mario-serie, met een eigen visuele stijl en sfeer. 
+                Terwijl de gebruiker scrolt, verschijnen de verschillende onderdelen van het verhaal geleidelijk in beeld — denk aan tekstblokken, afbeeldingen, geanimeerde achtergronden en geluidseffecten die samen een vloeiende en meeslepende ervaring vormen.
               </p>
             </div>
-            <div className="col-lg-6 col-md-12">
-              <img
-                src={process.env.PUBLIC_URL + "/images/projects/SMM2_API/Home.png"}
-                alt="SMM2 API"
-                className="img-fluid rounded shadow-sm"
-              />
+          </div>
+
+          <div className="row mb-3">
+            <div className="col-lg-10 project-description mb-4">
+              <div className="mb-2">
+                <h2 className="fw-bold accent-before">Interactieve animaties</h2>
+                <p className="text-muted">
+                  Maakt het leuker!
+                </p>
+              </div>
+              <p>
+                Om de scrollytelling tot leven te brengen, heb ik gebruikgemaakt van geanimeerde elementen die reageren op de scrollpositie van de gebruiker.
+                Zo gaat Mario soms van buis naar buis terwijl je door de tijdlijn scrolt, verschijnen power-ups in beeld als je op elementen klikt, en veranderen de achtergronden geleidelijk om de overgang tussen generaties te laten zien.
+              </p>
+            </div>
+          </div>
+
+          <div className="row mb-3">
+            <div className="col-lg-10 project-description mb-4">
+              <div className="mb-2">
+                <h2 className="fw-bold accent-before">Hoe ben ik te werk gegaan?</h2>
+                <p className="text-muted">
+                  Starten met de assets
+                </p>
+              </div>
+              <p> 
+                Voordat ik aan de website begon, heb ik eerst onderzocht welke teksten en informatie ik wilde opnemen en hoe ik het verhaal het best kon opbouwen. 
+                Vervolgens heb ik bestaande assets uit de <i>Super Mario Bros.</i>-franchise als referentie gebruikt en deze nagemaakt in Adobe Illustrator. 
+                Alle illustraties heb ik zorgvuldig geëxporteerd als PNG- en SVG-bestanden voor gebruik op de website. 
+                In Figma heb ik daarna verschillende composities en lay-outopties uitgeprobeerd om de juiste balans tussen beeld en tekst te vinden. 
+                Toen het ontwerp was uitgewerkt, ben ik gestart met het opzetten van de HTML-structuur. 
+                Tot slot heb ik geluidseffecten toegevoegd aan specifieke elementen en animaties geïmplementeerd om de website een levendige en interactieve uitstraling te geven.
+              </p>
             </div>
           </div>
 
           {/* Extra afbeeldingen (klikbaar) */}
           <div className="project-extra-images row mt-4">
             {extraImages.map((img, index) => (
-              <div className="col-md-6 col-lg-4 text-center" key={index}>
+              <div className="col-sm-6 col-lg-3 text-center" key={index}>
                 <div className="image-wrapper">
                   <img
                     src={img.src}
@@ -95,65 +114,33 @@ function MarioBrosInfographicPage() {
               </div>
             ))}
           </div>
-          <div className="col-lg-10 text">
-            <p className="custom_padding">
-              Tekst.</p>
-          </div>
-          <div className="row mt-4">
-            {bottomImages.map((img, index) => (
-              <div className="col-sm-6 text-center" key={index}>
-                <div className="image-wrapper">
-                  <img
-                    src={img.src}
-                    alt={img.alt}
-                    className="img-fluid rounded shadow-sm clickable-img"
-                    onClick={() => setSelectedImage(img.src)}
-                  />
-                  <p className="image-caption mt-2">{img.alt}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="col-lg-10 text">
-            <p className="custom_padding">
-              Tekst.</p>
-          </div>
-          <div className="row mt-4">
-            {combinedStatsImages.map((img, index) => (
-              <div className="col-md-4 text-center mb-3" key={index}>
-                <div className="image-wrapper">
-                  <img
-                    src={img.src}
-                    alt={img.alt}
-                    className="img-fluid rounded shadow-sm clickable-img"
-                    onClick={() => setSelectedImage(img.src)}
-                  />
-                  <p className="image-caption mt-2">{img.alt}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="project-conclusion mt-2 text-center">
-            <p>
-              Wil je het project zelf ervaren? Bekijk de interactieve data visualisatie in de video, of hier:{" "} 
-              <a
-                href="https://melvin-kiers.github.io/smm2_eu_vs_archive/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Super Mario Maker 2 EU VS Archive
-              </a>.
-            </p>
 
+          <div className="row my-3">
+            <div className="col-lg-10 project-description mb-4">
+              <div className="mb-2">
+                <h2 className="fw-bold accent-before">Eindresultaat</h2>
+                <p className="text-muted">
+                  Wat is er uitgekomen?
+                </p>
+              </div>
+              <p> 
+                In onderstaande video geef ik een korte demonstratie van de interactieve *scrollytelling*-website. 
+                Hierin is te zien hoe de gebruiker door de geschiedenis van de 2D <i>Super Mario Bros.</i>-games scrolt, waarbij tekst, beeld en animatie samenkomen tot één vloeiende ervaring. 
+                De video toont zowel de visuele opbouw als de interactieve elementen die het project tot leven brengen.
+              </p>
+            </div>
+          </div>
+          
+          <div className="project-conclusion mt-2 text-center">
             <div className="project-video mt-2 text-center">
               <video
                 width="100%"
                 height="auto"
                 controls
-                poster={process.env.PUBLIC_URL + "/images/projects/SMM2_API/Home.png"}
+                poster={process.env.PUBLIC_URL + "/images/projects/MarioBros_Infographic/ThumbnailVideo.png"}
               >
                 <source
-                  src={process.env.PUBLIC_URL + "/videos/SMM2_Video.mp4"}
+                  src={process.env.PUBLIC_URL + "/videos/InfographicVideo.mp4"}
                   type="video/mp4"
                 />
                 Je browser ondersteunt deze video niet.

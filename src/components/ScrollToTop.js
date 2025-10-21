@@ -1,13 +1,19 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-export default function ScrollToTop() {
+const ScrollToTop = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    // Scroll instant naar boven bij elke routewijziging
-    window.scrollTo(0, 0);
+    // Forceer direct naar boven zonder smooth scroll
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant" // Sommige browsers gebruiken 'auto' i.p.v. 'instant'
+    });
   }, [pathname]);
 
-  return null;
-}
+  return null; // belangrijk: component moet iets returnen
+};
+
+export default ScrollToTop;

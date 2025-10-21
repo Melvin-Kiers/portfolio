@@ -59,7 +59,7 @@ function Footer() {
             {/* Social media */}
             <div className="col item social mt-5">
               <a
-                href="https://linkedin.com/in/jouwprofiel"
+                href="https://www.linkedin.com/in/melvin-kiers-3647242b7/"
                 target="_blank"
                 rel="noreferrer"
                 className="social-circle"
@@ -67,7 +67,7 @@ function Footer() {
                 <FaLinkedin />
               </a>
               <a
-                href="https://github.com/jouwprofiel"
+                href="https://github.com/Melvin-Kiers"
                 target="_blank"
                 rel="noreferrer"
                 className="social-circle"
@@ -75,7 +75,7 @@ function Footer() {
                 <FaGithub />
               </a>
               <a
-                href="https://instagram.com/jouwprofiel"
+                href="https://instagram.com/melvin.kiers"
                 target="_blank"
                 rel="noreferrer"
                 className="social-circle"

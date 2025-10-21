@@ -35,7 +35,7 @@ function GroenReisAvontuurPage() {
         <div className="container text-white">
           <div className="row align-items-center justify-content-center">
             <div className="col-md-6">
-              <Link to="/" className="btn btn-outline-light mb-3">
+              <Link to="/projects" className="btn btn-outline-light mb-3">
                 &larr; Terug naar portfolio
               </Link>
               <h1 className="project-title mb-4">
@@ -48,6 +48,7 @@ function GroenReisAvontuurPage() {
               <div className="project-details my-4">
                 <span className="badge bg-secondary me-2 px-3 py-2">2023</span>
                 <span className="badge bg-info text-dark me-2 px-3 py-2">Figma</span>
+                <span className="badge bg-info text-dark me-2 px-3 py-2">BlocksmithXR</span>       
               </div>
             </div>
             <div className="col-md-6">

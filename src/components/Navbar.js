@@ -32,7 +32,7 @@ function Navbar() {
 
         <div className="navbar-right d-flex gap-2">
           <a
-            href="https://linkedin.com/in/..."
+            href="https://www.linkedin.com/in/melvin-kiers-3647242b7/"
             target="_blank"
             rel="noopener noreferrer"
             className="social-circle"
@@ -40,7 +40,7 @@ function Navbar() {
             <FaLinkedin />
           </a>
           <a
-            href="https://github.com/..."
+            href="https://github.com/Melvin-Kiers"
             target="_blank"
             rel="noopener noreferrer"
             className="social-circle"
@@ -48,7 +48,7 @@ function Navbar() {
             <FaGithub />
           </a>
           <a
-            href="https://instagram.com/..."
+            href="https://instagram.com/melvin.kiers"
             target="_blank"
             rel="noopener noreferrer"
             className="social-circle"
