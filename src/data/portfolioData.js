@@ -1,4 +1,11 @@
 export const portfolioData = [
+   {
+    title: "Mario Game Nederland",
+    year: "2025 - 2026",
+    tags: ["Godot", "Figma"],
+    image: process.env.PUBLIC_URL + "/images/thumbnails/mario-game-nl.png",
+    link: "/projects/mario-game-nl",
+  },
   {
     title: "Super Mario Maker 2 - Data display",
     year: "2025",

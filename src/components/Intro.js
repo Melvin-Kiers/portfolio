@@ -14,9 +14,9 @@ function Intro() {
               <h2 className="section-title accent-before">Wie ben ik?</h2>
             </header>
             <p className="intro-text">
-              Mijn naam is Melvin Kiers en ik studeer momenteel Communication & Multimedia Design (CMD) in Groningen. 
+              Mijn naam is Melvin Kiers en ik ben in Juli 2026 afgestudeerd aan de opleiding Communication & Multimedia Design (CMD) in Groningen. 
               Ik heb een grote interesse in front-end development en vind het leuk om ideeën tot leven te brengen met code en design. 
-              Tijdens mijn studie richt ik me vooral op het ontwerpen en bouwen van gebruiksvriendelijke en visueel aantrekkelijke websites. 
+              Tijdens mijn studie heb ik me vooral gericht op het ontwerpen en bouwen van gebruiksvriendelijke en visueel aantrekkelijke websites en interactieve instalaties. 
               Ik werk graag aan projecten waarin ik mijn creativiteit kan combineren met technische vaardigheden. 
               Onderzoek doe ik minder, maar ik haal veel plezier uit het daadwerkelijk maken en verbeteren van digitale producten. 
               In mijn portfolio laat ik o.a. zien hoe ik mijn passie voor front-end inzet om mooie en functionele interfaces te creëren.
