@@ -1,4 +1,11 @@
 export const portfolioData = [
+  {
+    title: "Afstuderen - HyperBridge Project",
+    year: "2026",
+    tags: ["React", "JS", "Figma", "After Effects", "Makey Makey"],
+    image: process.env.PUBLIC_URL + "/images/thumbnails/Homescreen.png",
+    link: "/projects/Afstuderen",
+  },
    {
     title: "Mario Game Nederland",
     year: "2025 - 2026",
