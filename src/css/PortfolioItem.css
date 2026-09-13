@@ -1,12 +1,131 @@
 section.portfolio {
     position: relative;
     z-index: 2;
-    background-color: #FFFFFF;
+    background-color: #03050C;
+}
+
+@media (min-width: 2560px) {
+    section.portfolio .container {
+      max-width: 1800px;
+  }
+}
+
+.section-subtitle {
+  text-transform: uppercase;
+  color: #2563FF;
+  letter-spacing: 1px;
+  font-size: 28px;
+  margin-bottom: -0.5rem;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-size: 80px;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.portfolio-item-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.portfolio-item {
+  display: flex;
+  align-items: stretch;
+  background-color: #0B0E1B;
+  overflow: hidden;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .portfolio-item:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.portfolio-item-content {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.portfolio-eyebrow {
+  color: #6B7280;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.portfolio-title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.portfolio-subtitle {
+  color: #9CA3AF;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+
+.portfolio-description {
+  color: #C9CDD6;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.portfolio-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.portfolio-tag {
+  border: 1px solid #56E9A7;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 999px;
+}
+
+.portfolio-cta {
+  color: #2563FF;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 20px 0 20px 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: auto; /* duwt de knop naar beneden */
+  align-self: flex-start; /* voorkomt dat de link de volle breedte pakt */
+
+  transition: transform 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+.portfolio-cta:hover {
+  color: #1545be;
+  transform: translateX(10px);
+}
+
+.portfolio-divider {
+  background-color: #7CF5C4;
+}
+
+.portfolio-image-wrapper {
+  overflow: hidden;
 }
 
 .portfolio-image {
@@ -17,129 +136,112 @@ section.portfolio {
 }
 
 .portfolio-item:hover .portfolio-image {
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
 
-.portfolio-item-content {
-  padding: 16px 20px;
+/* --- Variant 1: horizontaal, content links, afbeelding rechts --- */
+.variant-horizontal {
+  flex-direction: row;
+}
+.variant-horizontal .portfolio-item-content {
+  flex: 0 0 38%;
+}
+.variant-horizontal .portfolio-divider {
+  flex: 0 0 8px;
+}
+.variant-horizontal .portfolio-image-wrapper {
   flex: 1;
+  max-height: 450px;
 }
 
-.portfolio-item::after {
-  content: "";
+/* --- Variant 2: horizontaal, afbeelding links, content rechts --- */
+.variant-horizontal-reverse {
+  flex-direction: row-reverse;
+}
+.variant-horizontal-reverse .portfolio-item-content {
+  flex: 0 0 38%;
+}
+.variant-horizontal-reverse .portfolio-divider {
+  flex: 0 0 8px;
+}
+.variant-horizontal-reverse .portfolio-image-wrapper {
+  flex: 1;
+  max-height: 450px;
+}
+
+/* --- Variant 3: gestapeld, afbeelding boven, content onder --- */
+.variant-stacked {
+  flex-direction: column-reverse;
+}
+.variant-stacked .portfolio-item-content {
+  padding: 28px;
+}
+.variant-stacked .portfolio-divider {
+  height: 8px;
+}
+.variant-stacked .portfolio-image-wrapper {
+  min-height: 220px;
+}
+
+@media (max-width: 1200px) {
+  .variant-horizontal,
+  .variant-horizontal-reverse {
+    flex-direction: column-reverse;
+  }
+  .variant-horizontal .portfolio-item-content,
+  .variant-horizontal-reverse .portfolio-item-content {
+    flex: 1;
+    padding: 28px;
+  }
+  .variant-horizontal .portfolio-image-wrapper,
+  .variant-horizontal-reverse .portfolio-image-wrapper {
+    min-height: 220px;
+  }
+}
+
+.hover-underline::after,
+.hover-underline::before {
+  content: '';
   position: absolute;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, #2563FF, #56E9A7);
   left: 0;
-  bottom: 0;
-  width: 100%;
+
+  transform: scaleX(0);
+  transition: transform 0.4s ease-in-out;
+}
+
+.hover-underline::after {
+  bottom: 6px;
+  transform-origin: right;
+}
+
+.hover-underline::before {
+  top: 6px;
+  transform-origin: left;
+}
+
+.hover-underline:hover::after,
+.hover-underline:hover::before {
+  transform: scaleX(1);
+}
+
+section.portfolio::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 70%;
   height: 100%;
-  background-color: #00000020;
-  transform: scaleY(0.001);
-  transform-origin: bottom;
-  transition: transform 0.25s ease;
-  z-index: 0;
-}
 
-.portfolio-item:hover::after {
-  transform: scaleY(1);
-}
+  background-image: var(--line-bg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
 
-.portfolio-item-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.portfolio-title {
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
-.portfolio-year {
-  font-size: 0.9rem;
-  color: #9ea3b0;
-}
-
-.portfolio-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-}
-
-.portfolio-tag {
-  background-color: #ffffff;
-  color: #000000;
-  font-size: 0.8rem;
-  font-weight: 500;
-  padding: 4px 8px;
-  border-radius: 20px;
-  position: relative;
-}
-
-.portfolio-image-wrapper {
-  position: relative; /* nodig om overlay te positioneren */
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-}
-
-.portfolio-item-wrapper {
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  height: 100%; /* houdt kaarten gelijk */
-}
-
-.portfolio-title-overlay {
-  position: absolute;
-  top: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #b9f3f3; /* lichtblauw */
-  color: #000;
-  padding: 6px 14px;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 0.95rem;
-  text-align: center;
-  z-index: 2;
-}
-
-.portfolio-title-outside {
-  position: absolute;
-  top: -22px;
-  left: 50%;
-  transform: translateX(-50%);
-  /* background-color: #1b1e36;*/
-  background-color: #080D17;
-  border: solid 4px white;
-  color: #ffffff;
-  padding: 12px 20px;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 0.95rem;
-  text-align: center;
-  z-index: 5;
+  z-index: -1;
   pointer-events: none;
-  width: 75%;
-}
-
-.portfolio-item {
-  width: 100%;
-  height: 100%;
-  background-color: #101325;
-  border-radius: 14px;
-  overflow: hidden;
-  color: #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.portfolio-item-link {
-  text-decoration: none;
-  color: inherit;
-  display: block; /* maakt hele kaart klikbaar */
 }

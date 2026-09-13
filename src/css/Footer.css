@@ -1,15 +1,16 @@
 .footer-dark {
   padding: 50px 0;
   color: #f0f9ff;
-  background-color: #080D17;
+  background-color: #03050C;
   position: relative;
 }
 
 .footer-dark h3 {
   margin-top: 0;
   margin-bottom: 14px;
-  font-size: 18px;
-  font-family: "Fugaz One", sans-serif;
+  font-size: 28px;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
 }
 
 .footer-dark ul {
@@ -18,6 +19,9 @@
   line-height: 1.6;
   font-size: 16px;
   margin-bottom: 0;
+  font-family: "DM Sans", sans-serif;
+  line-height: 0.3in;
+  font-weight: 700;
 }
 
 .footer-dark ul a {
@@ -50,6 +54,7 @@
 .footer-dark .item.text p {
   opacity: 0.6;
   margin-bottom: 0;
+  font-weight: 700;
 }
 
 .footer-dark .item.social {
@@ -60,8 +65,8 @@
   content: "";
   display: block;
   width: 100%;
-  height: 2px; 
-  background: #ffffff13;
+  height: 1px; 
+  background: #56E9A7;
   margin: 0 auto 12px;
   border-radius: 10px;
   margin-bottom: 30px;
@@ -86,7 +91,7 @@
   display: inline-block;
   text-align: center;
   border-radius: 50%;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 0 1px #56E9A7;
   margin: 0 8px;
   color: #fff;
   opacity: 0.75;
@@ -98,10 +103,11 @@
 
 .footer-dark .copyright {
   text-align: center;
-  padding-top: 24px;
+  padding-top: 28px;
   opacity: 0.3;
-  font-size: 13px;
+  font-size: 14px;
   margin-bottom: 0;
+  font-family: "DM Sans", sans-serif;
 }
 
 .footer-dark .svg-wrapper {

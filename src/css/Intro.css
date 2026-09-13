@@ -1,106 +1,120 @@
-section.intro {
-  overflow-x: hidden;
-  position: relative;
-  z-index: 2;
-  background-color: #FCFEFF;
-  padding: 100px 0;
-}
-
-/* Algemene opmaak voor de sectie */
 .intro {
-  background-color: #f9fafc;
-  color: #333;
-  padding: 80px 0;
+  background-color: #03050C;
 }
 
-/* Tekstgedeelte */
-.about-me {
-  max-width: 600px;
+/* --- Hero --- */
+.intro-hero {
+  padding: 80px 0 40px;
 }
 
-/* Subtitel (kleiner, subtieler) */
 .section-subtitle {
   text-transform: uppercase;
-  color: #6c757d;
+  color: #2563FF;
   letter-spacing: 1px;
-  font-size: 0.9rem;
-  margin-bottom: 0.5rem;
+  font-size: 28px;
+  margin-bottom: -0.5rem;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
-/* Hoofdtitel */
 .section-title {
-  font-size: 2rem;
+  text-transform: uppercase;
+  font-size: 80px;
   font-weight: 700;
-  color: #222;
+  color: #FFFFFF;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
-/* Paragraaftekst */
-.intro-text {
-  font-size: 1rem;
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
-  color: #555;
+/* --- Timeline sections --- */
+.timeline-section {
+  padding: 60px 0;
+  border-top: 1px solid #1C243A;
+  border-bottom: 1px solid #1C243A;
+  background-color: #0B0E1B;
+  margin-top: 20px
 }
 
-/* Knopstijl */
-.intro-btn {
-  display: inline-block;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 30px;
+.timeline-eyebrow {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-family: "Barlow Condensed", sans-serif;
+  margin-bottom: -6px;
+}
+
+.timeline-highlight {
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #2563FF;
+  font-family: "Barlow Condensed", sans-serif;
+  margin-bottom: 16px;
+}
+
+.timeline-description {
+  color: #9CA3AF;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* --- Timeline list --- */
+.timeline-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 24px;
+  padding: 16px 0;
+}
+
+.timeline-item:last-child {
+  border-bottom: none;
+}
+
+.timeline-period {
+  flex: 0 0 130px;
+  font-family: "Courier New", monospace;
+  font-size: 0.8rem;
+  color: #2563FF;
+  padding-top: 3px;
+}
+
+.timeline-role {
+  font-size: 1.1rem;
   font-weight: 600;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  cursor: pointer;
+  color: #FFFFFF;
+  margin-bottom: 4px;
 }
 
-.intro-btn:hover {
-  background-color: #0056b3;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 91, 187, 0.2);
+.timeline-company {
+  font-weight: 400;
+  color: #6B7280;
 }
 
-/* Afbeelding */
-.intro-image {
-  max-width: 90%;
-  border-radius: 12px;
-  transition: transform 0.4s ease;
+.timeline-item-description {
+  font-size: 0.85rem;
+  color: #9CA3AF;
+  margin: 0;
 }
 
-.intro-image:hover {
-  transform: scale(1.03);
-}
-
-/* Responsief */
 @media (max-width: 767px) {
-  .intro {
-    text-align: left;
+  .intro-title {
+    font-size: 44px;
   }
 
-  .intro-btn {
-    margin-top: 1rem;
+  .timeline-highlight {
+    font-size: 1.8rem;
   }
-}
 
-/* --- Accent-driehoek voor de titel --- */
-.accent-before {
-  position: relative;
-  display: inline-block;
-}
+  .timeline-item {
+    flex-direction: column;
+    gap: 4px;
+  }
 
-.accent-before::before {
-  content: "";
-  position: absolute;
-  left: -40px;
-  top: 55%;
-  transform: translateY(-50%);
-  width: 0;
-  height: 0;
-
-  /* De driehoek zelf */
-  border-top: 12px solid transparent;
-  border-bottom: 12px solid transparent;
-  border-left: 20px solid #9FDDEF; /* blauw driehoekje */
+  .timeline-period {
+    flex: none;
+  }
 }

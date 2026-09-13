@@ -2,32 +2,33 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../css/PortfolioItem.css";
 
-function PortfolioItem({ title, year, tags, image, link }) {
+function PortfolioItem({ title, subtitle, description, year, tags, image, link, variant = "horizontal" }) {
   return (
-    <div className="portfolio-item-wrapper">
-      <div className="portfolio-title-outside">{title}</div>
+    <div className={`portfolio-item variant-${variant}`}>
+      <div className="portfolio-item-content">
+        <p className="portfolio-eyebrow">{year}</p>
+        <h3 className="portfolio-title">{title}</h3>
+        {subtitle && <p className="portfolio-subtitle">{subtitle}</p>}
+        {description && <p className="portfolio-description">{description}</p>}
 
-      <Link to={link} className="portfolio-item-link">
-        <div className="portfolio-item">
-          <div className="portfolio-image-wrapper">
-            <img src={image} alt={title} className="portfolio-image" />
-          </div>
-
-          <div className="portfolio-item-content">
-            <div className="portfolio-item-header">
-              <span className="portfolio-year">{year}</span>
-            </div>
-
-            <div className="portfolio-tags">
-              {tags.map((tag, index) => (
-                <span key={index} className="portfolio-tag">
-                  {tag}
-                </span>
-              ))}
-            </div>
-          </div>
+        <div className="portfolio-tags">
+          {tags.map((tag, index) => (
+            <span key={index} className="portfolio-tag">
+              {tag}
+            </span>
+          ))}
         </div>
-      </Link>
+
+        <Link to={link} className="portfolio-cta hover-underline">
+          Bekijk hier het project
+        </Link>
+      </div>
+
+      <div className="portfolio-divider" />
+
+      <div className="portfolio-image-wrapper">
+        <img src={image} alt={title} className="portfolio-image" />
+      </div>
     </div>
   );
 }

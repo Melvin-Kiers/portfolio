@@ -57,7 +57,7 @@ function Footer() {
             </div>
 
             {/* Social media */}
-            <div className="col item social mt-5">
+            <div className="col item social mt-3">
               <a
                 href="https://www.linkedin.com/in/melvin-kiers-3647242b7/"
                 target="_blank"

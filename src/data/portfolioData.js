@@ -5,6 +5,7 @@ export const portfolioData = [
     tags: ["React", "JS", "Figma", "After Effects", "Makey Makey"],
     image: process.env.PUBLIC_URL + "/images/thumbnails/Homescreen.png",
     link: "/projects/Afstuderen",
+    description: "A comprehensive design system bridging design tokens and component architecture for a FinTech platform serving 2M+ users. From Figma foundations to a production React library.",
   },
    {
     title: "Mario Game Nederland",
@@ -12,6 +13,7 @@ export const portfolioData = [
     tags: ["Godot", "Figma"],
     image: process.env.PUBLIC_URL + "/images/thumbnails/mario-game-nl.png",
     link: "/projects/mario-game-nl",
+    description: "A comprehensive design system bridging design tokens and component architecture for a FinTech platform serving 2M+ users. From Figma foundations to a production React library.",
   },
   {
     title: "Super Mario Maker 2 - Data display",
@@ -19,6 +21,7 @@ export const portfolioData = [
     tags: ["React", "JS", "API", "Git", "CSS", "Bootstrap"],
     image: process.env.PUBLIC_URL + "/images/thumbnails/SMM2_API.png",
     link: "/projects/smm2_api",
+    description: "A comprehensive design system bridging design tokens and component architecture for a FinTech platform serving 2M+ users. From Figma foundations to a production React library.",
   },
   {
     title: "Stage 2025 - Convident",
@@ -26,6 +29,7 @@ export const portfolioData = [
     tags: ["WordPress ACF", "PHP", "Figma", "CSS"],
     image: process.env.PUBLIC_URL + "/images/thumbnails/stageConvident.png",
     link: "/projects/stage-convident",
+    description: "A comprehensive design system bridging design tokens and component architecture for a FinTech platform serving 2M+ users. From Figma foundations to a production React library.",
   },
     {
     title: "Visto",
@@ -33,6 +37,7 @@ export const portfolioData = [
     tags: ["Tailwind", "Figma", "After Effects"],
     image: process.env.PUBLIC_URL + "/images/thumbnails/visto.png",
     link: "/projects/visto",
+    description: "A comprehensive design system bridging design tokens and component architecture for a FinTech platform serving 2M+ users. From Figma foundations to a production React library.",
   },
   {
     title: "Formula 1 - API Data display",
@@ -40,6 +45,7 @@ export const portfolioData = [
     tags: ["React", "JS", "API", "Git", "CSS"],
     image: process.env.PUBLIC_URL + "/images/thumbnails/f1_api.png",
     link: "/projects/f1_api",
+    description: "A comprehensive design system bridging design tokens and component architecture for a FinTech platform serving 2M+ users. From Figma foundations to a production React library.",
   },
     {
     title: "Warmtestad",
@@ -47,6 +53,7 @@ export const portfolioData = [
     tags: ["Figma", "HTML/CSS/JS"],
     image: process.env.PUBLIC_URL + "/images/thumbnails/warmteStad.png",
     link: "/projects/warmte-stad",
+    description: "A comprehensive design system bridging design tokens and component architecture for a FinTech platform serving 2M+ users. From Figma foundations to a production React library.",
   },
   {
     title: "Interactive Mario infographic",
@@ -54,6 +61,7 @@ export const portfolioData = [
     tags: ["HTML/CSS/JS"],
     image: process.env.PUBLIC_URL + "/images/thumbnails/marioBrosInfographic.png",
     link: "/projects/mario-bros-infographic",
+    description: "A comprehensive design system bridging design tokens and component architecture for a FinTech platform serving 2M+ users. From Figma foundations to a production React library.",
   },
   {
     title: "Retro Rush",
@@ -61,6 +69,7 @@ export const portfolioData = [
     tags: ["HTML/CSS/JS", "Micro:Bit"],
     image: process.env.PUBLIC_URL + "/images/thumbnails/retro_rush.png",
     link: "/projects/retro-rush",
+    description: "A comprehensive design system bridging design tokens and component architecture for a FinTech platform serving 2M+ users. From Figma foundations to a production React library.",
   },
   {
     title: "Groenreis avontuur - App concept",
@@ -68,5 +77,6 @@ export const portfolioData = [
     tags: ["Figma", "BlocksmithXR"],
     image: process.env.PUBLIC_URL + "/images/thumbnails/groenreisAvontuur.png",
     link: "/projects/groenreis-avontuur",
+    description: "A comprehensive design system bridging design tokens and component architecture for a FinTech platform serving 2M+ users. From Figma foundations to a production React library.",
   },
 ];

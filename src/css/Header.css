@@ -1,9 +1,9 @@
-.header {
+/* .header {
   position: relative;
   width: 100%;
-  height: 100vh; /* header vult hele viewport */
+  height: 100vh;
   overflow: hidden;
-  background-color: #080D17;
+  background-color: #05070D;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,12 +17,12 @@
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 0; /* onder de tekst */
+  z-index: 0;
 }
 
 .header-content {
   position: relative;
-  z-index: 2; /* boven particles */
+  z-index: 2;
 }
 
 .header p.im {
@@ -32,8 +32,10 @@
 }
 
 .header h1.name {
-    font-size: 96px;
-    font-family: "Fugaz One", sans-serif;
+    font-size: 160px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 900;
+    font-style: normal;
 }
 
 .header p.about {
@@ -71,5 +73,270 @@
   .header p.about {
     margin-left: 4px !important;
     margin-right: 4px !important;
+  }
+} */
+
+@media (min-width: 1920px) {
+  .header .container {
+    max-width: 1600px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .header .container {
+    max-width: 1800px;
+  }
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #05070D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.header > .marquee {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  z-index: 10;
+}
+
+.header-content {
+  position: relative;
+  z-index: 2;
+}
+
+.header h1.name {
+  font-size: clamp(48px, 9vw, 180px);
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-transform: uppercase;
+
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.15);
+
+  margin-bottom: 28px;
+}
+
+.subtitle {
+  text-align: left;
+  width: 62%;
+}
+
+.header h2.design,
+h2.front-end {
+  font-size: clamp(36px, 7vw, 140px);
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: right;
+  letter-spacing: 1px;
+}
+
+h2.front-end {
+  color: #2563FF;
+  position: relative;
+  top: -30px;
+}
+
+.header::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 70%;
+  height: 100%;
+
+  background-image: var(--line-bg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hexagon-container {
+  position: absolute;
+  right: -120px;
+  bottom: -100px;
+  width: 85vh;
+  z-index: 2;
+}
+
+.hexagon-container::after {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 250%;
+  top: -50%;
+  left: 5%;
+  background-color: #0A101A;
+  transform: rotate(35deg);
+  z-index: -20;
+}
+
+.hexagon-tegel {
+  position: relative;
+
+  width: 100%;
+  aspect-ratio: 1 / 1.1547;
+
+  clip-path: polygon(
+    50% 0%,
+    100% 24%,
+    100% 75%,
+    50% 100%,
+    0% 75%,
+    0% 25%
+  );
+
+  overflow: hidden;
+}
+
+.hexagon-tegel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.special-line {
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: 100%;
+  z-index: 3;
+}
+
+.special-line img {
+  display: block;
+  width: 88%;
+  height: auto;
+}
+
+/* ============================= */
+/* Responsive aanpassingen       */
+/* ============================= */
+
+@media (max-width: 1900px) {
+  .header {
+    height: auto;
+    min-height: 100vh;
+    padding: 120px 0 220px;
+    align-items: flex-start;
+  }
+  
+  .title.row {
+    display: block;
+  }
+
+  .subtitle,
+  .header h1.name {
+    width: 100%;
+    text-align: left;
+  }
+
+  .header h2.design,
+  h2.front-end {
+    text-align: left;
+  }
+
+  h2.front-end {
+    top: -12px;
+  }
+
+  .hexagon-container {
+    position: absolute;
+    bottom: 20px;
+    width: 60vh;
+  }
+}
+
+/* Tablet: hexagon wordt kleiner en schuift dichter naar de rand,
+   subtitle krijgt iets meer breedte omdat er minder ruimte is */
+@media (max-width: 1400px) {
+  .hexagon-container {
+    width: 60vh;
+    right: -80px;
+    bottom: -60px;
+  }
+
+  .subtitle {
+    width: 85%;
+  }
+  
+  .title.row {
+    display: block;
+  }
+}
+
+/* Klein-tablet / grote telefoon: de hexagon-decoratie en de titel
+   gaan botsen als beide op vaste posities blijven staan, dus
+   de layout klapt om naar een gestapelde, verticale opbouw */
+@media (max-width: 1024px) {
+  .header {
+    height: auto;
+    min-height: 100vh;
+    padding: 120px 0 220px;
+    align-items: flex-start;
+  }
+
+  .title.row {
+    display: block;
+  }
+
+  .subtitle,
+  .header h1.name {
+    width: 100%;
+    text-align: left;
+    font-size: 92px;
+  }
+
+  .header h2.design,
+  h2.front-end {
+    text-align: left;
+  }
+
+  h2.front-end {
+    top: -12px;
+  }
+
+
+}
+
+/* Mobiel: hexagon-decoratie voegt op dit formaat vooral visuele ruis
+   toe zonder duidelijke meerwaarde naast de tekst, dus die verbergen
+   we in plaats van 'm steeds verder te verkleinen */
+@media (max-width: 576px) {
+  .header {
+    padding: 100px 0 60px;
+  }
+
+  .header h1.name {
+    margin-bottom: 16px;
+    font-size: 64px;
+  }
+
+  .subtitle h2.design, h2.front-end {
+    font-size: 48px;
+    z-index: 5;
+  }
+
+  .hexagon-container {
+    position: absolute;
+    bottom: 20px;
+    width: 42vh;
   }
 }

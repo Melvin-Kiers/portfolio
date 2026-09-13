@@ -1,0 +1,50 @@
+.bgSlider {
+  width: 100%;
+  overflow: hidden;
+  background-color: #56E9A7;
+  color: #010107;
+  padding: 22px 0;
+}
+
+.marquee__track {
+  display: flex;
+  width: max-content;
+  animation: marquee 45s linear infinite;
+  will-change: transform;
+}
+
+.marquee__group {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.marquee__item {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase
+  ;
+}
+
+.marquee__separator {
+  margin: 0 130px;
+  opacity: 0.6;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}

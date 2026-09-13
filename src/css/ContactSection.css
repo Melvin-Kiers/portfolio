@@ -1,0 +1,60 @@
+.contact {
+  background-color: #03050C;
+  padding: 100px 0;
+}
+
+.contact-heading {
+  margin: 0 0 32px;
+  line-height: 0.95;
+}
+
+.contact-line {
+  display: block;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 140px;
+}
+
+.contact-line-solid {
+  color: #FFFFFF;
+}
+
+.contact-line-ghost {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.15);
+}
+
+.contact-line-accent {
+  color: #2563FF;
+}
+
+.contact-text {
+  color: #9CA3AF;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+.contact-cta {
+  display: inline-block;
+  background-color: #2563FF;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 14px 32px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-cta:hover {
+  background-color: #1545be;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 767px) {
+  .contact-line {
+    font-size: 44px;
+  }
+}
