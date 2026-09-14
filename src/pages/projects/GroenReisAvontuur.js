@@ -46,9 +46,9 @@ function GroenReisAvontuurPage() {
                 Deze app combineert interactieve functies en een gebruiksvriendelijke interface om gebruikers te informeren, inspireren en begeleiden in hun reis naar duurzame mobiliteit.
               </p>
               <div className="project-details my-4">
-                <span className="badge bg-secondary me-2 px-3 py-2">2023</span>
-                <span className="badge bg-info text-dark me-2 px-3 py-2">Figma</span>
-                <span className="badge bg-info text-dark me-2 px-3 py-2">BlocksmithXR</span>       
+                <span className="badge bg-tag me-2 px-3 py-2">2023</span>
+                <span className="badge tag me-2 px-3 py-2">Figma</span>
+                <span className="badge tag me-2 px-3 py-2">BlocksmithXR</span>       
               </div>
             </div>
             <div className="col-md-6">
@@ -69,7 +69,7 @@ function GroenReisAvontuurPage() {
             <div className="col-lg-10 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Het doel van de app</h2>
-                <p className="text-muted">
+                <p className="sub-text">
                   App
                 </p>
               </div>
@@ -85,7 +85,7 @@ function GroenReisAvontuurPage() {
             <div className="col-lg-10 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Het maken van schetsen</h2>
-                <p className="text-muted">
+                <p className="sub-text">
                   Op papier
                 </p>
               </div>
@@ -116,7 +116,7 @@ function GroenReisAvontuurPage() {
             <div className="col-lg-10 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Uitwerken van de Mid-fi's</h2>
-                <p className="text-muted">
+                <p className="sub-text">
                   In Figma
                 </p>
               </div>
@@ -147,7 +147,7 @@ function GroenReisAvontuurPage() {
             <div className="col-lg-10 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Uitwerken van de Hi-fi's</h2>
-                <p className="text-muted">
+                <p className="sub-text">
                   In Figma
                 </p>
               </div>
@@ -177,7 +177,7 @@ function GroenReisAvontuurPage() {
             <div className="col-lg-6 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Mini 3D omgeving</h2>
-                <p className="text-muted">
+                <p className="sub-text">
                   Extra
                 </p>
               </div>

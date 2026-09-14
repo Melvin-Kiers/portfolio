@@ -4,6 +4,8 @@ import { loadAll } from "@tsparticles/all";
 import "../css/Header.css";
 import lineBg from "./line-bg.svg";
 import ScrollSkills from "../components/ScrollSkills";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // function Header() {
 //   useEffect(() => {
@@ -55,7 +57,12 @@ import ScrollSkills from "../components/ScrollSkills";
 
 // export default Header;
 
+
 function Header() {
+    useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <>
     <header
@@ -64,7 +71,7 @@ function Header() {
         "--line-bg": `url(${lineBg})`,
       }}
     >
-      <div className="container header-content">
+      <div className="container header-content" data-aos="zoom-in-left" data-aos-duration="1000">
         <div className="title row">
           <div className="col-lg-8">
             <h1 className="name">Melvin Kiers</h1>
@@ -75,7 +82,7 @@ function Header() {
           </div>  
         </div>
       </div>
-      <div className="hexagon-container">
+      <div className="hexagon-container" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
         <div className="hexagon-tegel">
           <img
             src={process.env.PUBLIC_URL + "/images/Melvin.jpg"}

@@ -28,12 +28,12 @@ function F1apiPage() {
                 Om mijn passie voor Formule 1 en technologie te combineren, heb ik als onderdeel van het schoolvak PED (Programmeren en Dataverwerking) een project ontwikkeld waarin ik gebruikmaak van een bestaande Formule 1 API om racegegevens visueel weer te geven.
               </p>
               <div className="project-details my-4">
-                <span className="badge bg-secondary me-2 px-3 py-2">2024</span>
-                <span className="badge bg-info text-dark me-2 px-3 py-2">React</span>
-                <span className="badge bg-info text-dark me-2 px-3 py-2">JS</span>
-                <span className="badge bg-info text-dark me-2 px-3 py-2">API</span>
-                <span className="badge bg-info text-dark me-2 px-3 py-2">Git</span>
-                <span className="badge bg-info text-dark me-2 px-3 py-2">CSS</span>
+                <span className="badge bg-tag me-2 px-3 py-2">2024</span>
+                <span className="badge tag me-2 px-3 py-2">React</span>
+                <span className="badge tag me-2 px-3 py-2">JS</span>
+                <span className="badge tag me-2 px-3 py-2">API</span>
+                <span className="badge tag me-2 px-3 py-2">Git</span>
+                <span className="badge tag me-2 px-3 py-2">CSS</span>
               </div>
             </div>
             <div className="col-md-6">
@@ -54,7 +54,7 @@ function F1apiPage() {
             <div className="col-lg-10 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Ontwerpfase in Figma</h2>
-                <p className="text-muted">
+                <p className="sub-text">
                   Designen in Figma
                 </p>
               </div>
@@ -75,7 +75,7 @@ function F1apiPage() {
             <div className="col-lg-10 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Technische realisatie</h2>
-                <p className="text-muted">
+                <p className="sub-text">
                   Met React en GitHub
                 </p>
               </div>
@@ -119,7 +119,7 @@ function F1apiPage() {
             <div className="col-lg-8 col-md-12 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Conclusie</h2>
-                <p className="text-muted">
+                <p className="sub-text">
                   Wat heb ik meegenomen?
                 </p>
               </div>

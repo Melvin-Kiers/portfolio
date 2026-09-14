@@ -32,6 +32,16 @@ code {
 
 h1.project-title {
   font-size: 48px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.fw-bold.accent-before {
+  font-size: 36px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase; 
 }
 
 .project-image {
@@ -260,4 +270,33 @@ p.custom_padding {
   -moz-user-select: none;
   -ms-user-select: none;
   pointer-events: none; /* voorkomt ook slepen/klikken */
+}
+
+.tag {
+  border: 1px solid #56E9A7;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 999px;
+}
+
+.bg-tag {
+  border: 1px solid #2563FF;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 999px;
+}
+
+.sub-text {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+
 }

@@ -58,10 +58,35 @@ function Navbar() {
           </li>
         </ul>
 
-        <div className="navbar-right d-flex gap-2">
-          <button className="download btn-d">
+        <div className="navbar-right shadow d-flex gap-2">
+          {/* <button className="download btn-d">
             <p>Download CV</p>
-          </button>
+          </button> */}
+          
+          <a
+            href="https://www.linkedin.com/in/melvin-kiers-3647242b7/"
+            target="_blank"
+            rel="noreferrer"
+            className="social-circle"
+            >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://github.com/Melvin-Kiers"
+            target="_blank"
+            rel="noreferrer"
+            className="social-circle"
+            >
+            <FaGithub />
+          </a>
+          <a
+            href="https://instagram.com/melvin.kiers"
+            target="_blank"
+            rel="noreferrer"
+            className="social-circle"
+            >
+            <FaInstagram />
+          </a>
         </div>
       </div>
     </nav>

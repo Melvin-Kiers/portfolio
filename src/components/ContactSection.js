@@ -1,9 +1,12 @@
 import React from "react";
 import "../css/ContactSection.css";
+import lineBg from "./line-bg.svg";
 
 function ContactSection() {
   return (
-    <section id="contact" className="contact">
+    <section id="contact" className="contact"  style={{
+        "--line-bg": `url(${lineBg})`,
+      }}>
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6">

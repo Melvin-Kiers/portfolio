@@ -5,7 +5,7 @@ export const portfolioData = [
     tags: ["React", "JS", "Figma", "After Effects", "Makey Makey"],
     image: process.env.PUBLIC_URL + "/images/thumbnails/Homescreen.png",
     link: "/projects/Afstuderen",
-    description: "A comprehensive design system bridging design tokens and component architecture for a FinTech platform serving 2M+ users. From Figma foundations to a production React library.",
+    description: "HyperBRIDGE is een door de EU gefinancierd Interreg-project dat het eerste grensoverschrijdende Hyperloop-netwerk van Europa tussen Nederland en Duitsland aanlegt. Het huidige probleem is dat de meeste mensen nog nooit van zoiets als de Hyperloop hebben gehoord, vooral kinderen niet. Dit zijn immers juist de mensen die er in de toekomst plezier aan zullen beleven.",
   },
    {
     title: "Mario Game Nederland",
@@ -13,7 +13,7 @@ export const portfolioData = [
     tags: ["Godot", "Figma"],
     image: process.env.PUBLIC_URL + "/images/thumbnails/mario-game-nl.png",
     link: "/projects/mario-game-nl",
-    description: "A comprehensive design system bridging design tokens and component architecture for a FinTech platform serving 2M+ users. From Figma foundations to a production React library.",
+    description: "Tijdens dit project heb ik een speelbaar 2D-gameprototype ontwikkeld in de game engine Godot. Het project stond in het teken van het ontwerpen en bouwen van een game, waarbij ik zowel technische als creatieve vaardigheden heb toegepast. Hier laat ik zien hoe ik het prototype stap voor stap heb ontwikkeld.",
   },
   {
     title: "Super Mario Maker 2 - Data display",
@@ -21,7 +21,7 @@ export const portfolioData = [
     tags: ["React", "JS", "API", "Git", "CSS", "Bootstrap"],
     image: process.env.PUBLIC_URL + "/images/thumbnails/SMM2_API.png",
     link: "/projects/smm2_api",
-    description: "A comprehensive design system bridging design tokens and component architecture for a FinTech platform serving 2M+ users. From Figma foundations to a production React library.",
+    description: "Een interactieve data visualisatie van Super Mario Maker 2 EU VS Mode, gebouwd met React en gekoppeld aan live data via een API en Google Sheets.",
   },
   {
     title: "Stage 2025 - Convident",
@@ -29,7 +29,7 @@ export const portfolioData = [
     tags: ["WordPress ACF", "PHP", "Figma", "CSS"],
     image: process.env.PUBLIC_URL + "/images/thumbnails/stageConvident.png",
     link: "/projects/stage-convident",
-    description: "A comprehensive design system bridging design tokens and component architecture for a FinTech platform serving 2M+ users. From Figma foundations to a production React library.",
+    description: "Tijdens mijn derde jaar van de opleiding Communication & Multimedia Design liep ik stage bij Convident in Groningen. In deze periode kreeg ik de kans om mee te werken aan uiteenlopende webprojecten voor echte klanten. Het was een waardevolle ervaring waarin ik mijn kennis van design en development verder kon ontwikkelen.",
   },
     {
     title: "Visto",
@@ -37,7 +37,7 @@ export const portfolioData = [
     tags: ["Tailwind", "Figma", "After Effects"],
     image: process.env.PUBLIC_URL + "/images/thumbnails/visto.png",
     link: "/projects/visto",
-    description: "A comprehensive design system bridging design tokens and component architecture for a FinTech platform serving 2M+ users. From Figma foundations to a production React library.",
+    description: "Visto is een gebruiksvriendelijke tool van Vistolabs waarmee onderzoekers visueel onderzoek kunnen uitvoeren met participanten. Het platform maakt het eenvoudig om foto’s, video’s en andere visuele data te verzamelen en analyseren.",
   },
   {
     title: "Formula 1 - API Data display",
@@ -45,7 +45,7 @@ export const portfolioData = [
     tags: ["React", "JS", "API", "Git", "CSS"],
     image: process.env.PUBLIC_URL + "/images/thumbnails/f1_api.png",
     link: "/projects/f1_api",
-    description: "A comprehensive design system bridging design tokens and component architecture for a FinTech platform serving 2M+ users. From Figma foundations to a production React library.",
+    description: "Om mijn passie voor Formule 1 en technologie te combineren, heb ik als onderdeel van het schoolvak PED (Programmeren en Dataverwerking) een project ontwikkeld waarin ik gebruikmaak van een bestaande Formule 1 API om racegegevens visueel weer te geven.",
   },
     {
     title: "Warmtestad",
@@ -53,7 +53,7 @@ export const portfolioData = [
     tags: ["Figma", "HTML/CSS/JS"],
     image: process.env.PUBLIC_URL + "/images/thumbnails/warmteStad.png",
     link: "/projects/warmte-stad",
-    description: "A comprehensive design system bridging design tokens and component architecture for a FinTech platform serving 2M+ users. From Figma foundations to a production React library.",
+    description: "Voor Warmtestad, een publieke warmtebedrijf dat samen met de gemeente Groningen werkt aan een CO₂-neutrale toekomst, hebben we als team een interactieve bakfiets ontworpen. Deze bakfiets maakt op een speelse manier inzichtelijk hoe duurzame warmte bijdraagt aan een schonere stad.",
   },
   {
     title: "Interactive Mario infographic",
@@ -61,7 +61,7 @@ export const portfolioData = [
     tags: ["HTML/CSS/JS"],
     image: process.env.PUBLIC_URL + "/images/thumbnails/marioBrosInfographic.png",
     link: "/projects/mario-bros-infographic",
-    description: "A comprehensive design system bridging design tokens and component architecture for a FinTech platform serving 2M+ users. From Figma foundations to a production React library.",
+    description: "Voor dit (school)project heb ik een interactieve scrollytelling-website gemaakt die de geschiedenis van de 2D Super Mario Bros.-games vertelt. Terwijl je naar beneden scrolt, ontdek je per spel wat het uniek maakte, ondersteund door animaties, visuals en interactieve elementen. Het project combineert webdesign, storytelling en nostalgie tot één dynamische beleving.",
   },
   {
     title: "Retro Rush",
@@ -69,7 +69,7 @@ export const portfolioData = [
     tags: ["HTML/CSS/JS", "Micro:Bit"],
     image: process.env.PUBLIC_URL + "/images/thumbnails/retro_rush.png",
     link: "/projects/retro-rush",
-    description: "A comprehensive design system bridging design tokens and component architecture for a FinTech platform serving 2M+ users. From Figma foundations to a production React library.",
+    description: "Retro Rush is een interactief HTML/CSS-spel waarin nostalgie en competitie samenkomen. Het spel brengt de sfeer van klassieke arcadegames tot leven in een modern jasje en nodigt spelers uit om het tegen elkaar op te nemen in een één-op-één strijd vol snelheid, tactiek en plezier.",
   },
   {
     title: "Groenreis avontuur - App concept",
@@ -77,6 +77,6 @@ export const portfolioData = [
     tags: ["Figma", "BlocksmithXR"],
     image: process.env.PUBLIC_URL + "/images/thumbnails/groenreisAvontuur.png",
     link: "/projects/groenreis-avontuur",
-    description: "A comprehensive design system bridging design tokens and component architecture for a FinTech platform serving 2M+ users. From Figma foundations to a production React library.",
+    description: "In mijn portfolio presenteer ik GroenReis Avontuur, een prototype app die ik heb ontworpen met als doel mensen te stimuleren om over te stappen van brandstofauto’s naar voertuigen die rijden op groene energie. Deze app combineert interactieve functies en een gebruiksvriendelijke interface om gebruikers te informeren, inspireren en begeleiden in hun reis naar duurzame mobiliteit.",
   },
 ];

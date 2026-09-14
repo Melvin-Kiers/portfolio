@@ -39,9 +39,9 @@ function MarioGamePage() {
                Tijdens dit project heb ik een speelbaar 2D-gameprototype ontwikkeld in de game engine Godot. Het project stond in het teken van het ontwerpen en bouwen van een game, waarbij ik zowel technische als creatieve vaardigheden heb toegepast. Hier laat ik zien hoe ik het prototype stap voor stap heb ontwikkeld.
               </p>
               <div className="project-details my-4">
-                <span className="badge bg-secondary me-2 px-3 py-2">2025</span>
-                <span className="badge bg-info text-dark me-2 px-3 py-2">Godot</span>
-                <span className="badge bg-info text-dark me-2 px-3 py-2">Figma</span>
+                <span className="badge bg-tag me-2 px-3 py-2">2025</span>
+                <span className="badge tag me-2 px-3 py-2">Godot</span>
+                <span className="badge tag me-2 px-3 py-2">Figma</span>
               </div>
             </div>
             <div className="col-md-6">
@@ -62,7 +62,7 @@ function MarioGamePage() {
             <div className="col-lg-10 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Het gemaakte spel</h2>
-                <p className="text-muted">
+                <p className="sub-text">
                   Het gemaakte prototype
                 </p>
               </div>
@@ -80,7 +80,7 @@ function MarioGamePage() {
             <div className="col-lg-10 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Aanleiding van de opdracht</h2>
-                <p className="text-muted">
+                <p className="sub-text">
                   Games en topografie
                 </p>
               </div>
@@ -98,7 +98,7 @@ function MarioGamePage() {
             <div className="col-lg-10 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Ontwerpfase in Figma</h2>
-                <p className="text-muted">
+                <p className="sub-text">
                   Ontwerpen van de overworld en game-assets
                 </p>
               </div>
@@ -141,7 +141,7 @@ function MarioGamePage() {
             <div className="col-lg-10 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Technische realisatie</h2>
-                <p className="text-muted">
+                <p className="sub-text">
                   Uitwerken in Godot
                 </p>
               </div>
@@ -175,7 +175,7 @@ function MarioGamePage() {
             <div className="col-lg-8 col-md-12 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Eindresulaat</h2>
-                <p className="text-muted">
+                <p className="sub-text">
                   Wat is de uitkomst?
                 </p>
               </div>

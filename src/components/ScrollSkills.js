@@ -6,7 +6,7 @@ const items = [
   "Front-End",
   "Design",
   "Development",
-  "Creative",
+  "Figma",
 ];
 
 export default function Marquee() {

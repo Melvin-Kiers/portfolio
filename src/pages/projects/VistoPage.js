@@ -44,10 +44,10 @@ function VistoPage() {
                 Het platform maakt het eenvoudig om foto’s, video’s en andere visuele data te verzamelen en analyseren.
               </p>
               <div className="project-details my-4">
-                <span className="badge bg-secondary me-2 px-3 py-2">2024 - 2025</span>
-                <span className="badge bg-info text-dark me-2 px-3 py-2">Tailwind</span>
-                <span className="badge bg-info text-dark me-2 px-3 py-2">Figma</span>
-                <span className="badge bg-info text-dark me-2 px-3 py-2">After Effects</span>
+                <span className="badge bg-tag me-2 px-3 py-2">2024 - 2025</span>
+                <span className="badge tag me-2 px-3 py-2">Tailwind</span>
+                <span className="badge tag me-2 px-3 py-2">Figma</span>
+                <span className="badge tag me-2 px-3 py-2">After Effects</span>
               </div>
             </div>
             <div className="col-md-6">
@@ -68,7 +68,7 @@ function VistoPage() {
             <div className="col-lg-6 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Visto - Photovoice Methode</h2>
-                <p className="text-muted">
+                <p className="sub-text">
                   Photovoice
                 </p>
               </div>
@@ -100,7 +100,7 @@ function VistoPage() {
             <div className="col-lg-10 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Vooronderzoek doen</h2>
-                <p className="text-muted">
+                <p className="sub-text">
                   In gesprek gaan
                 </p>
               </div>
@@ -118,7 +118,7 @@ function VistoPage() {
             <div className="col-lg-10 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Lo-fi/Mid-fi prototypes in Figma</h2>
-                <p className="text-muted">
+                <p className="sub-text">
                   App
                 </p>
               </div>
@@ -153,7 +153,7 @@ function VistoPage() {
             <div className="col-lg-10 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Uitwerken van de Hi-fi in Figma</h2>
-                <p className="text-muted">
+                <p className="sub-text">
                   App
                 </p>
               </div>
@@ -187,7 +187,7 @@ function VistoPage() {
             <div className="col-lg-10 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Landingspage</h2>
-                <p className="text-muted">
+                <p className="sub-text">
                   Figma en Tailwind
                 </p>
               </div>
@@ -221,7 +221,7 @@ function VistoPage() {
             <div className="col-lg-6 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Banners en visitekaartjes</h2>
-                <p className="text-muted">
+                <p className="sub-text">
                   Promotie
                 </p>
               </div>

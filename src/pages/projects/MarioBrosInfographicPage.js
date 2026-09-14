@@ -30,8 +30,8 @@ function MarioBrosInfographicPage() {
                 ondersteund door animaties, visuals en interactieve elementen. Het project combineert webdesign, storytelling en nostalgie tot één dynamische beleving.
               </p>
               <div className="project-details my-4">
-                <span className="badge bg-secondary me-2 px-3 py-2">2023 - 2024</span>
-                <span className="badge bg-info text-dark me-2 px-3 py-2">HTML/CSS/JS</span>
+                <span className="badge bg-tag me-2 px-3 py-2">2023 - 2024</span>
+                <span className="badge tag me-2 px-3 py-2">HTML/CSS/JS</span>
               </div>
             </div>
             <div className="col-md-6">
@@ -52,7 +52,7 @@ function MarioBrosInfographicPage() {
             <div className="col-lg-10 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Scrollytelling-website</h2>
-                <p className="text-muted">
+                <p className="sub-text">
                   Wat houdt het in?
                 </p>
               </div>
@@ -68,7 +68,7 @@ function MarioBrosInfographicPage() {
             <div className="col-lg-10 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Interactieve animaties</h2>
-                <p className="text-muted">
+                <p className="sub-text">
                   Maakt het leuker!
                 </p>
               </div>
@@ -83,7 +83,7 @@ function MarioBrosInfographicPage() {
             <div className="col-lg-10 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Hoe ben ik te werk gegaan?</h2>
-                <p className="text-muted">
+                <p className="sub-text">
                   Starten met de assets
                 </p>
               </div>
@@ -119,7 +119,7 @@ function MarioBrosInfographicPage() {
             <div className="col-lg-10 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Eindresultaat</h2>
-                <p className="text-muted">
+                <p className="sub-text">
                   Wat is er uitgekomen?
                 </p>
               </div>

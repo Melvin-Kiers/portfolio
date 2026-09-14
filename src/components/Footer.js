@@ -29,9 +29,9 @@ function Footer() {
             <div className="col-sm-6 col-md-3 item">
               <h3>Credits</h3>
               <ul>
-                <li>
+                {/* <li>
                   <span>Built with React</span>
-                </li>
+                </li> */}
                 <li>
                   <a
                     href="https://bootsnipp.com/snippets/bxDBA"

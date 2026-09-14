@@ -42,13 +42,13 @@ function SMM2apiPage() {
                 gebouwd met React en gekoppeld aan live data via een API en Google Sheets.
               </p>
               <div className="project-details my-4">
-                <span className="badge bg-secondary me-2 px-3 py-2">2025</span>
-                <span className="badge bg-info text-dark me-2 px-3 py-2">React</span>
-                <span className="badge bg-info text-dark me-2 px-3 py-2">JS</span>
-                <span className="badge bg-info text-dark me-2 px-3 py-2">API</span>
-                <span className="badge bg-info text-dark me-2 px-3 py-2">Git</span>
-                <span className="badge bg-info text-dark me-2 px-3 py-2">Bootstrap</span>
-                <span className="badge bg-info text-dark px-3 py-2">CSS</span>
+                <span className="badge bg-tag me-2 px-3 py-2">2025</span>
+                <span className="badge tag me-2 px-3 py-2">React</span>
+                <span className="badge tag me-2 px-3 py-2">JS</span>
+                <span className="badge tag me-2 px-3 py-2">API</span>
+                <span className="badge tag me-2 px-3 py-2">Git</span>
+                <span className="badge tag me-2 px-3 py-2">Bootstrap</span>
+                <span className="badge tag px-3 py-2">CSS</span>
               </div>
             </div>
             <div className="col-md-6">
@@ -69,7 +69,7 @@ function SMM2apiPage() {
             <div className="col-lg-6 col-md-12 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Super Mario Maker 2 EU VS Archive</h2>
-                <p className="text-muted">
+                <p className="sub-text">
                   Een interactieve data visualisatie gebouwd met React, Bootstrap en live data uit een API en Google Sheets.
                 </p>
               </div>

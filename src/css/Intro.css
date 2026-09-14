@@ -4,7 +4,7 @@
 
 /* --- Hero --- */
 .intro-hero {
-  padding: 80px 0 40px;
+  padding: 30px 0 0;
 }
 
 .section-subtitle {
@@ -76,10 +76,11 @@
 
 .timeline-period {
   flex: 0 0 130px;
-  font-family: "Courier New", monospace;
-  font-size: 0.8rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 18px;
   color: #2563FF;
   padding-top: 3px;
+  font-weight: 700;
 }
 
 .timeline-role {

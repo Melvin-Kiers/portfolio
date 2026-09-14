@@ -1,11 +1,60 @@
 .contact {
   background-color: #03050C;
-  padding: 100px 0;
+  padding: 30px 0 50px;
+  position: relative;
+}
+
+.contact::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 70%;
+  height: 100%;
+
+  background-image: var(--line-bg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+
+  z-index: 0;
+  pointer-events: none;
+
+  opacity: 1;
 }
 
 .contact-heading {
   margin: 0 0 32px;
   line-height: 0.95;
+  display: inline-block;
+}
+
+.contact-heading:hover {
+  animation: lightBounce 0.5s ease;
+}
+
+@keyframes lightBounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(-3px);
+  }
+
+  55% {
+    transform: translateY(2px);
+  }
+
+  75% {
+    transform: translateY(-2px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .contact-line {
@@ -66,7 +115,7 @@
 
 .cta-arrow-link {
   display: block;
-  width: 350px;
+  width: 310px;
   height: 80px;
   line-height: 80px;
   font-weight: 700;
@@ -76,12 +125,12 @@
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border: 3px solid #333;
+  border: 3px solid #fffefe;
   border-radius: 16px;
   transition: all 0.35s;
   font-family: "Barlow Condensed", sans-serif;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 28px;;
 }
 
 .cta-arrow-icon {
@@ -120,6 +169,6 @@
 
 @media (max-width: 767px) {
   .contact-line {
-    font-size: 44px;
+    font-size: 64px;
   }
 }

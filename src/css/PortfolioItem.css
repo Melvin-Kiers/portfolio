@@ -2,6 +2,7 @@ section.portfolio {
     position: relative;
     z-index: 2;
     background-color: #03050C;
+    overflow: hidden;
 }
 
 @media (min-width: 2560px) {
@@ -27,6 +28,12 @@ section.portfolio {
   font-family: "Barlow Condensed", sans-serif;
 }
 
+@media (max-width: 767px) {
+    .section-title {
+      font-size: 60px;
+  }
+}
+
 .portfolio-item-link {
   text-decoration: none;
   color: inherit;
@@ -39,7 +46,7 @@ section.portfolio {
   align-items: stretch;
   background-color: #0B0E1B;
   overflow: hidden;
-  height: 100%;
+  /* height: 100%; */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -69,6 +76,12 @@ section.portfolio {
   margin-bottom: 8px;
   line-height: 1.1;
   text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .portfolio-title {
+      font-size: 32px;
+  }
 }
 
 .portfolio-subtitle {
@@ -151,7 +164,7 @@ section.portfolio {
 }
 .variant-horizontal .portfolio-image-wrapper {
   flex: 1;
-  max-height: 450px;
+  /* max-height: 450px; */
 }
 
 /* --- Variant 2: horizontaal, afbeelding links, content rechts --- */
@@ -166,7 +179,7 @@ section.portfolio {
 }
 .variant-horizontal-reverse .portfolio-image-wrapper {
   flex: 1;
-  max-height: 450px;
+  /* max-height: 450px; */
 }
 
 /* --- Variant 3: gestapeld, afbeelding boven, content onder --- */
@@ -231,8 +244,8 @@ section.portfolio::after {
   content: "";
 
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -250px;
+  right: -250px;
 
   width: 70%;
   height: 100%;
@@ -244,4 +257,6 @@ section.portfolio::after {
 
   z-index: -1;
   pointer-events: none;
+
+  opacity: 1;
 }

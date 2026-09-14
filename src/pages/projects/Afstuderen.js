@@ -36,13 +36,13 @@ function Afstuderen() {
                HyperBRIDGE is een door de EU gefinancierd Interreg-project dat het eerste grensoverschrijdende Hyperloop-netwerk van Europa tussen Nederland en Duitsland aanlegt. Het huidige probleem is dat de meeste mensen nog nooit van zoiets als de Hyperloop hebben gehoord, vooral kinderen niet. Dit zijn immers juist de mensen die er in de toekomst plezier aan zullen beleven.
               </p>
               <div className="project-details my-4">
-                <span className="badge bg-secondary me-2 px-3 py-2">2026</span>
-                <span className="badge bg-info text-dark me-2 px-3 py-2">React</span>
-                <span className="badge bg-info text-dark me-2 px-3 py-2">JS</span>
-                <span className="badge bg-info text-dark me-2 px-3 py-2">CSS</span>
-                <span className="badge bg-info text-dark me-2 px-3 py-2">Figma</span>
-                <span className="badge bg-info text-dark me-2 px-3 py-2">AFter Effects</span>
-                <span className="badge bg-info text-dark me-2 px-3 py-2">Makey Makey</span>
+                <span className="badge bg-tag me-2 px-3 py-2">2026</span>
+                <span className="badge tag me-2 px-3 py-2">React</span>
+                <span className="badge tag me-2 px-3 py-2">JS</span>
+                <span className="badge tag me-2 px-3 py-2">CSS</span>
+                <span className="badge tag me-2 px-3 py-2">Figma</span>
+                <span className="badge tag me-2 px-3 py-2">AFter Effects</span>
+                <span className="badge tag me-2 px-3 py-2">Makey Makey</span>
               </div>
             </div>
             <div className="col-md-6">
@@ -63,7 +63,7 @@ function Afstuderen() {
             <div className="col-lg-10 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Wat is er gedaan?</h2>
-                <p className="text-muted">
+                <p className="sub-text">
                   en voor wie?
                 </p>
               </div>
@@ -78,7 +78,7 @@ function Afstuderen() {
             <div className="col-lg-10 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Designchallenge</h2>
-                <p className="text-muted">
+                <p className="sub-text">
                   Wat is de opgestelde Designchallenge?
                 </p>
               </div>
@@ -92,7 +92,7 @@ function Afstuderen() {
             <div className="col-lg-10 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Oplossing en aanpak</h2>
-                <p className="text-muted">
+                <p className="sub-text">
                   Hoe is er gewerkt?
                 </p>
               </div>
@@ -135,7 +135,7 @@ function Afstuderen() {
             <div className="col-lg-10 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Hoe ziet de ervaring eruit?</h2>
-                <p className="text-muted">
+                <p className="sub-text">
                   en hoe werkt het?
                 </p>
               </div>
@@ -184,7 +184,7 @@ function Afstuderen() {
             <div className="col-lg-10 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Resultaat en impact</h2>
-                <p className="text-muted">
+                <p className="sub-text">
                   Conclusie
                 </p>
               </div>
@@ -194,11 +194,11 @@ function Afstuderen() {
             </div>
           </div>
 
-          {/* <div className="row mt-5 align-items-center">
+          <div className="row mt-5 align-items-center">
             <div className="col-lg-8 col-md-12 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Eindresulaat</h2>
-                <p className="text-muted">
+                <p className="sub-text">
                   Wat is de uitkomst?
                 </p>
               </div>
@@ -211,14 +211,14 @@ function Afstuderen() {
           <div className="row">
             <div className="col-12">
               <iframe
-                src="https://www.youtube.com/embed/M1q35RYGMXs"
+                src="https://www.youtube.com/embed/fHiGvqTtgnI?si=duMs3Rh1pbKrnf3P"
                 title="YouTube video"
                 width="100%"
                 height="600"
                 allowFullScreen
               ></iframe>
             </div>
-          </div> */}
+          </div>
         </div>
       </section>
 

@@ -9,7 +9,7 @@ function Intro() {
       <div className="intro-hero">
         <div className="container">
           <h3 className="section-subtitle">Over mij</h3>
-          <h2 className="section-title accent-before mb-4">Wie ben ik?</h2>
+          <h2 className="section-title accent-before">Wie ben ik?</h2>
         </div>
       </div>
 
