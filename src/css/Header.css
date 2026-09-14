@@ -239,7 +239,7 @@ h2.front-end {
 @media (max-width: 1900px) {
   .header {
     height: auto;
-    min-height: 100vh;
+    min-height: 100svh;
     padding: 120px 0 220px;
     align-items: flex-start;
   }
@@ -294,7 +294,7 @@ h2.front-end {
 @media (max-width: 1024px) {
   .header {
     height: auto;
-    min-height: 100vh;
+    min-height: 100svh;
     padding: 120px 0 220px;
     align-items: flex-start;
   }
