@@ -60,7 +60,12 @@ import "aos/dist/aos.css";
 
 function Header() {
     useEffect(() => {
-    AOS.init();
+    AOS.init({
+      duration: 1000,
+      once: true,
+      disable: "mobile"
+});
+    
   }, []);
 
   return (
