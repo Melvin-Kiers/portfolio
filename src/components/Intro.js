@@ -5,7 +5,7 @@ import "../css/Intro.css";
 
 function Intro() {
   return (
-    <section className="intro">
+    <section className="intro" id="intro">
       <div className="intro-hero">
         <div className="container">
           <h3 className="section-subtitle">Over mij</h3>

@@ -19,6 +19,15 @@ function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const scrollToSection = (id) => (e) => {
+  e.preventDefault();
+  closeMenu();
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
   return (
     <nav className={`navbar d-flex justify-content-between align-items-center px-4 ${scrolled ? "scrolled" : ""}`}>
       {/* Logo */}
@@ -36,14 +45,21 @@ function Navbar() {
       {/* Menu */}
       <div className={`navbar-menu ${menuOpen ? "open" : ""}`}>
         <ul className="navbar-center list-unstyled mb-0">
-          <li><Link to="/" onClick={closeMenu}>Home</Link></li>
-          <li><Link to="/projects" onClick={closeMenu}>Projects</Link></li>
-          <li><Link to="/contact" onClick={closeMenu}>About me</Link></li>
-          <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
+          <li>
+            <Link to="/" onClick={closeMenu}>Home</Link></li>
+          <li>
+            <a href="#projects" onClick={scrollToSection("projects")}>Projects</a>
+          </li>
+          <li>
+            <a href="#intro" onClick={scrollToSection("intro")}>About me</a>
+          </li>
+          <li>
+            <a href="#contact" onClick={scrollToSection("contact")}>Contact</a>
+          </li>
         </ul>
 
         <div className="navbar-right d-flex gap-2">
-          <button className="download">
+          <button className="download btn-d">
             <p>Download CV</p>
           </button>
         </div>

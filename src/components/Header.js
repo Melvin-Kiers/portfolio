@@ -59,7 +59,7 @@ function Header() {
   return (
     <>
     <header
-      className="header"
+      className="header" id="home"
       style={{
         "--line-bg": `url(${lineBg})`,
       }}

@@ -17,7 +17,7 @@ function Portfolio() {
   const groups = chunk(portfolioData, 4);
 
   return (
-    <section className="portfolio py-5"
+    <section className="portfolio py-5" id="projects"
     style={{
         "--line-bg": `url(${lineBg})`,
       }}>
