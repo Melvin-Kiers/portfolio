@@ -138,7 +138,40 @@ section.portfolio {
 }
 
 .portfolio-image-wrapper {
+  position: relative;
   overflow: hidden;
+}
+
+/* Shine */
+.portfolio-image-wrapper::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -100%;
+  width: 60%;
+  height: 200%;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+
+  transform: rotate(20deg);
+  transition: left 0.8s ease;
+
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* Hover */
+.portfolio-item:hover .portfolio-image-wrapper::before {
+  transform: translateY(0);
+}
+
+.portfolio-item:hover .portfolio-image-wrapper::after {
+  left: 110%;
 }
 
 .portfolio-image {

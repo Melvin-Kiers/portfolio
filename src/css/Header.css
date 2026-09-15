@@ -266,7 +266,7 @@ h2.front-end {
   .hexagon-container {
     position: absolute;
     bottom: 20px;
-    width: 60vh;
+    width: 75vh;
   }
 }
 
@@ -274,7 +274,7 @@ h2.front-end {
    subtitle krijgt iets meer breedte omdat er minder ruimte is */
 @media (max-width: 1400px) {
   .hexagon-container {
-    width: 60vh;
+    width: 78vh;
     right: -80px;
     bottom: -60px;
   }
@@ -325,7 +325,7 @@ h2.front-end {
 /* Mobiel: hexagon-decoratie voegt op dit formaat vooral visuele ruis
    toe zonder duidelijke meerwaarde naast de tekst, dus die verbergen
    we in plaats van 'm steeds verder te verkleinen */
-@media (max-width: 576px) {
+@media (max-width: 1024px) {
   .header {
     padding: 100px 0 60px;
   }
@@ -346,3 +346,4 @@ h2.front-end {
     width: 42vh;
   }
 }
+

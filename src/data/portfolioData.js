@@ -80,3 +80,5 @@ export const portfolioData = [
     description: "In mijn portfolio presenteer ik GroenReis Avontuur, een prototype app die ik heb ontworpen met als doel mensen te stimuleren om over te stappen van brandstofauto’s naar voertuigen die rijden op groene energie. Deze app combineert interactieve functies en een gebruiksvriendelijke interface om gebruikers te informeren, inspireren en begeleiden in hun reis naar duurzame mobiliteit.",
   },
 ];
+
+

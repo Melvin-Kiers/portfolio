@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../css/ContactSection.css";
 import lineBg from "./line-bg.svg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function ContactSection() {
+  
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section id="contact" className="contact"  style={{
         "--line-bg": `url(${lineBg})`,
@@ -11,10 +18,10 @@ function ContactSection() {
         <div className="row align-items-center">
           <div className="col-lg-6">
             <h2 className="contact-heading">
-              <span className="contact-line contact-line-solid">Heb jij een</span>
-              <span className="contact-line contact-line-solid">idee?</span>
-              <span className="contact-line contact-line-ghost">Let's</span>
-              <span className="contact-line contact-line-accent">Build it.</span>
+              <span className="contact-line contact-line-solid" data-aos="fade-left">Heb jij een</span>
+              <span className="contact-line contact-line-solid" data-aos="fade-left">idee?</span>
+              <span className="contact-line contact-line-ghost" data-aos="fade-left">Let's</span>
+              <span className="contact-line contact-line-accent" data-aos="fade-left">Build it.</span>
             </h2>
 
             <p className="contact-text">
@@ -23,7 +30,7 @@ function ContactSection() {
             </p>
           </div>
 
-          <div className="col-lg-6 text-lg-end mt-4 mt-lg-0">
+          <div className="col-lg-6 text-lg-end mt-4 mt-lg-0" data-aos="fade-right">
             <div className="cta-arrow-wrapper">
               <div className="cta-arrow-link-wrapper">
                 <a href="mailto:melvinkiers2003@gmail.com" className="cta-arrow-link">

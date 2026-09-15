@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../css/PortfolioItem.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 function PortfolioItem({ title, subtitle, description, year, tags, image, link, variant = "horizontal" }) {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <div className={`portfolio-item variant-${variant}`}>
+    <div className={`portfolio-item variant-${variant}`} data-aos="fade-up">
       <div className="portfolio-item-content">
         <p className="portfolio-eyebrow">{year}</p>
         <h3 className="portfolio-title">{title}</h3>
