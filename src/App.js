@@ -14,6 +14,7 @@ import RetroRushPage from "./pages/projects/RetroRushPage";
 import GroenReisAvontuurPage from "./pages/projects/GroenReisAvontuur";
 import MarioGamePage from "./pages/projects/MarioGameNL";
 import Afstuderen from "./pages/projects/Afstuderen";
+import TTV from "./pages/projects/TTV";
 import Footer from "./components/Footer";
 import NotFoundPage from "./pages/NotFoundPage";
 
@@ -30,6 +31,7 @@ function App() {
           <Route path="/projects" element={<Projectspage />} />
           <Route path="/contact" element={<ContactPage />} />
 
+          <Route path="/projects/ttv" element={<TTV />} />
           <Route path="/projects/afstuderen" element={<Afstuderen />} />
           <Route path="/projects/mario-game-nl" element={<MarioGamePage />} />
           <Route path="/projects/smm2_api" element={<SMM2apiPage />} />

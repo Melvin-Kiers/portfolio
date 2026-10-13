@@ -1,4 +1,12 @@
 export const portfolioData = [
+    {
+    title: "TTV Vries — Website redesign & development",
+    year: "2026",
+    tags: ["WordPress", "JS", "Figma", "PHP", "ACF"],
+    image: process.env.PUBLIC_URL + "/images/thumbnails/TTV_Homescreen.png",
+    link: "/projects/ttv",
+    description: "Voor TTV Vries heb ik gewerkt aan een nieuwe website, van het Figma design tot de vertaling naar WordPress. Hierbij heb ik me gericht op het design en het omzetten van herbruikbare componenten naar flexibele ACF blokken.",
+  },
   {
     title: "Afstuderen - HyperBridge Project",
     year: "2026",

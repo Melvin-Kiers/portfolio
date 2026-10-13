@@ -300,3 +300,31 @@ p.custom_padding {
   padding-bottom: 8px;
 
 }
+
+.comp-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.desk-image {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  object-position: center;  
+}
+
+.acf-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.main-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: top;
+}

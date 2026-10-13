@@ -197,7 +197,7 @@ section.portfolio {
 }
 .variant-horizontal .portfolio-image-wrapper {
   flex: 1;
-  /* max-height: 450px; */
+  max-height: 520px;
 }
 
 /* --- Variant 2: horizontaal, afbeelding links, content rechts --- */
@@ -212,7 +212,7 @@ section.portfolio {
 }
 .variant-horizontal-reverse .portfolio-image-wrapper {
   flex: 1;
-  /* max-height: 450px; */
+  max-height: 520px;
 }
 
 /* --- Variant 3: gestapeld, afbeelding boven, content onder --- */

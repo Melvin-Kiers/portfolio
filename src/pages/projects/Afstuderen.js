@@ -19,6 +19,24 @@ function Afstuderen() {
     { src: process.env.PUBLIC_URL + "/images/projects/Afstuderen/panel.png", alt: "Gamaakte paneel / speelplaat", },
   ];
 
+  const researchImages = [
+    {
+      src: process.env.PUBLIC_URL + "/images/projects/Afstuderen/Persona.png",
+      alt: "Persona van de doelgroep",
+      caption: "Persona",
+    },
+    {
+      src: process.env.PUBLIC_URL + "/images/projects/Afstuderen/empathyMap.png",
+      alt: "Empathy map van de doelgroep",
+      caption: "Empathy map",
+    },
+    {
+      src: process.env.PUBLIC_URL + "/images/projects/Afstuderen/customerJourney.png",
+      alt: "Customer journey van de interactieve ervaring",
+      caption: "Customer journey",
+    },
+  ];
+
   return (
     <>
       {/* Intro sectie */}
@@ -89,28 +107,60 @@ function Afstuderen() {
           </div>
 
           <div className="row">
-            <div className="col-lg-10 project-description mb-4">
+            <div className="col-lg-12 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Oplossing en aanpak</h2>
                 <p className="sub-text">
                   Hoe is er gewerkt?
                 </p>
               </div>
-              <p>
-                Aan het begin van het jaar (2026) werden tijdens de ideevormingsfase verschillende concepten onderzocht, variërend van fysieke installaties en samenwerkingservaringen tot meeslepende digitale omgevingen. Met behulp van methoden zoals brainstormsessies, conceptschetsen en een 2x2-matrix werden de concepten beoordeeld op basis van impact en haalbaarheid. Het uiteindelijke concept werd gekozen omdat het creativiteit, interactiviteit en educatieve waarde combineerde en tegelijkertijd binnen de projectomvang realistisch bleef.
-              </p>
+             <p>
+              Tijdens de ideevormingsfase aan het begin van 2026 heb ik verschillende concepten onderzocht, variërend van fysieke installaties en samenwerkingservaringen tot digitale omgevingen. Met behulp van brainstormsessies, conceptschetsen en een 2x2-matrix heb ik de mogelijkheden beoordeeld op impact en haalbaarheid. Uiteindelijk is gekozen voor een concept dat creativiteit, interactiviteit en educatieve waarde combineert en tegelijkertijd binnen de projectomvang haalbaar bleef.
+            </p>
 
-              <p>
-                Gedurende het project werden meerdere testsessies gehouden met klasgenoten, deskundigen en uiteindelijk ook basisschoolkinderen. De feedback uit deze sessies had directe invloed op het ontwerp. De navigatie, de visuele hiërarchie, de instructies en de educatieve inhoud werden voortdurend verfijnd om de bruikbaarheid en het begrip te verbeteren.
-              </p>
+            <p>
+              Om de interactieve installatie goed te laten aansluiten bij kinderen van 8 tot 12 jaar, heb ik de doelgroep verder in kaart gebracht. Hiervoor heb ik onder andere een persona, empathy map en customer journeys uitgewerkt. Deze hulpmiddelen gaven inzicht in de behoeften, motivaties en verwachtingen van de doelgroep. De inzichten vormden een basis voor ontwerpkeuzes op het gebied van interactie, visuele begeleiding en de manier waarop de werking van de Hyperloop wordt uitgelegd.
+            </p>
 
-              <p>
-                Het prototype zelf werd ontwikkeld met behulp van React en Bootstrap, waardoor snelle iteratie en het testen van nieuwe ideeën mogelijk waren. Er werden aanvullende elementen zoals animaties, illustraties en educatieve video’s gemaakt om de leerervaring te ondersteunen en de betrokkenheid te versterken. Gamificatie-elementen, waaronder scores, ranglijsten en beloningen, werden geïntegreerd om kinderen te motiveren en aan te moedigen om op ontdekkingstocht te gaan.
-              </p>
+            {/* Doelgroeponderzoek */}
+            <div className="project-extra-images row my-4">
+              {researchImages.map((img, index) => (
+                <div className="col-md-4 mb-4" key={index}>
+                  <div className="image-wrapper">
+                    <img
+                      src={img.src}
+                      alt={img.alt}
+                      className="img-fluid rounded shadow-sm clickable-img desk-image"
+                      onClick={() => setSelectedImage(img.src)}
+                      role="button"
+                      tabIndex={0}
+                      onKeyDown={(e) => {
+                        if (e.key === "Enter" || e.key === " ") {
+                          e.preventDefault();
+                          setSelectedImage(img.src);
+                        }
+                      }}
+                    />
 
-              <p>
-                Een van de belangrijkste inzichten tijdens het project was dat kinderen vaak geschreven instructies oversloegen ten gunste van onmiddellijke interactie. Als gevolg daarvan evolueerde het ontwerp naar een grotere nadruk op visuele begeleiding, animaties en vereenvoudigde taal. Deze aanpassing zorgde voor een aanzienlijke verbetering van de duidelijkheid en de gebruiksvriendelijkheid tijdens latere testsessies. 
-              </p>
+                    <p className="image-caption mt-2 text-center">
+                      {img.caption}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <p>
+              Gedurende het project heb ik meerdere testsessies uitgevoerd met klasgenoten, deskundigen en uiteindelijk ook basisschoolkinderen. De feedback uit deze sessies heb ik gebruikt om het ontwerp verder te verbeteren. Zo zijn onder andere de navigatie, visuele hiërarchie, instructies en educatieve inhoud aangepast om de ervaring begrijpelijker en gebruiksvriendelijker te maken.
+            </p>
+
+            <p>
+              Het interactieve prototype heb ik ontwikkeld met React en Bootstrap. Daarnaast heb ik animaties, illustraties en educatieve video's gemaakt om de leerervaring te ondersteunen. Ook heb ik spelelementen, zoals scores, ranglijsten en beloningen, geïntegreerd om kinderen te motiveren en actief bij de ervaring te betrekken.
+            </p>
+
+            <p>
+              Een belangrijk inzicht uit de testsessies was dat kinderen geschreven instructies regelmatig oversloegen en liever direct met de installatie aan de slag gingen. Daarom heb ik het ontwerp aangepast met meer visuele begeleiding, animaties en eenvoudigere taal. Deze aanpassingen hielpen om de werking van de installatie duidelijker te maken en de gebruiksvriendelijkheid tijdens latere testsessies te verbeteren.
+            </p>
             </div>
           </div>
 
@@ -132,7 +182,7 @@ function Afstuderen() {
           </div>
 
           <div className="row">
-            <div className="col-lg-10 project-description mb-4">
+            <div className="col-lg-12 project-description mb-4">
               <div className="mb-2">
                 <h2 className="fw-bold accent-before">Hoe ziet de ervaring eruit?</h2>
                 <p className="sub-text">
@@ -166,7 +216,7 @@ function Afstuderen() {
         {/* Extra afbeeldingen (klikbaar) */}
           <div className="project-extra-images row my-4">
             {extraImages.map((img, index) => (
-              <div className="col-lg-4 text-center" key={index}>
+              <div className="col-lg-6 text-center" key={index}>
                 <div className="image-wrapper">
                   <img
                     src={img.src}
