@@ -243,7 +243,7 @@ function Afstuderen() {
               </p>
 
               <p>
-                Het project laat zien hoe gamification en interactief leren kunnen bijdragen aan het begrijpelijk maken van complexe technologische onderwerpen voor een jong publiek. Het prototype vormt een basis voor verdere ontwikkeling van een educatieve installatie binnen het European Hyperloop Center. Daarnaast werd mijn afstudeerproject geselecteerd voor <strong>de top 3</strong> van de afstudeereindopdrachten, een mooie erkenning voor het uiteindelijke concept en de uitwerking ervan.
+                Het project laat zien hoe gamification en interactief leren kunnen bijdragen aan het begrijpelijk maken van complexe technologische onderwerpen voor een jong publiek. Het prototype vormt een basis voor verdere ontwikkeling van een educatieve installatie binnen het European Hyperloop Center. Daarnaast werd mijn afstudeerproject geselecteerd voor <strong>de top 3</strong> van de afstudeereindopdrachten van de CMD studie, een mooie erkenning voor het uiteindelijke concept en de uitwerking ervan.
               </p>
             </div>
           </div>
