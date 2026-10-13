@@ -107,7 +107,7 @@ function TTV() {
 
             <div className="col-md-6">
               <img
-                src={`${publicPath}/images/thumbnails/TTV_Homescreen.png`}
+                src={`${publicPath}/images/thumbnails/TTV_homescreen.png`}
                 alt="Websiteconcept van TTV Vries"
                 className="img-fluid rounded shadow-sm"
               />
