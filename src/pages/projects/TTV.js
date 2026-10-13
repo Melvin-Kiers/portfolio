@@ -330,12 +330,12 @@ function TTV() {
                 De laatste punten van de website worden nu afgerond voordat deze binnenkort live staat.
               </p>
 
-            <p>
+            {/* <p>
                 De nieuwe website is nu te vinden op:{" "}
                 <a href="https://ttvvries.basveenhoven.nl/" target="_blank" rel="noopener noreferrer">
                     TTV Vries
                 </a>
-            </p>
+            </p> */}
             </div>
           </div>
 
